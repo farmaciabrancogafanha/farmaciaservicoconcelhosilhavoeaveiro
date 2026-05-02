@@ -8,4 +8,4 @@ concelhos de Ílhavo e Aveiro.
 ## Estrutura
 - `index.html` — site (HTML+CSS+JS vanilla, autocontido)
 - `farmacias.json` — catálogo das farmácias + calendário anual de turnos
-- `docs/` — prompts de IA usados na construção e manutenção
+- `prompt_inicio.md`, `prompt_manutencao.md` — prompts de IA para construção e manutenção
