@@ -1,0 +1,4762 @@
+{
+  "farmacias": {
+    "ilhavo": {
+      "anca_castro": {
+        "nome": "Ançã Castro",
+        "morada": "Av. João Corte Real, 101, R/C – Praia da Barra",
+        "telefones": [
+          "+351 234 360 721"
+        ],
+        "maps": "https://maps.app.goo.gl/1TrVshjxAcj7sRjD6"
+      },
+      "branco": {
+        "nome": "Branco",
+        "morada": "Avenida José Estévão, 113 – Gafanha da Nazaré",
+        "telefones": [
+          "+351 911 077 204",
+          "+351 234 361 576"
+        ],
+        "maps": "https://maps.app.goo.gl/uWZKmKyb7mUFpAbK7"
+      },
+      "do_cais": {
+        "nome": "do Cais",
+        "morada": "Rua do Norte, 11 – Ílhavo",
+        "telefones": [
+          "+351 234 322 885"
+        ],
+        "maps": "https://maps.app.goo.gl/ZKo4sEXSTWLZ6xJc6"
+      },
+      "moderna": {
+        "nome": "Moderna",
+        "morada": "Avenida 25 de Abril, 142 – Ílhavo",
+        "telefones": [
+          "+351 234 328 222"
+        ],
+        "maps": "https://maps.app.goo.gl/Kveu3CMLYg8PTXGz6"
+      },
+      "morais": {
+        "nome": "Morais",
+        "morada": "Avenida José Estevão, 513 – Gafanha da Nazaré",
+        "telefones": [
+          "+351 234 361 817"
+        ],
+        "maps": "https://maps.app.goo.gl/TU7AxwVtEn3YW3EJ7"
+      },
+      "ribau": {
+        "nome": "Ribau",
+        "morada": "Rua de Ílhavo, 45 – Gafanha da Encarnação",
+        "telefones": [
+          "+351 234 365 131"
+        ],
+        "maps": "https://maps.app.goo.gl/HrTf83RADGsJMZTH7"
+      },
+      "santos": {
+        "nome": "Santos",
+        "morada": "Rua Vasco da Gama, 91 – Ílhavo",
+        "telefones": [
+          "+351 234 322 930"
+        ],
+        "maps": "https://maps.app.goo.gl/jSJF3MWVUHF47dhs8"
+      },
+      "senos": {
+        "nome": "Senos",
+        "morada": "Rua Arcebispo Pereira Bilhano, 22-24 – Ílhavo",
+        "telefones": [
+          "+351 234 322 742"
+        ],
+        "maps": "https://maps.app.goo.gl/T8sGd31s44z8i15V9"
+      }
+    },
+    "aveiro": {
+      "ala": {
+        "nome": "Ala",
+        "morada": "Rua Cristovão Pinho Queimado, 44 – Aveiro",
+        "telefones": [
+          "+351 234 423 314"
+        ],
+        "maps": "https://maps.app.goo.gl/RYSTpLzbbvvGYqKi9"
+      },
+      "alagoas": {
+        "nome": "Alagoas",
+        "morada": "Rua da República com a Rua da Boavista, 4-6-8 – Lugar de Alagoas",
+        "telefones": [
+          "+351 234 308 250"
+        ],
+        "maps": "https://maps.app.goo.gl/CEmr4au6J5dtuUxN7"
+      },
+      "aveirense": {
+        "nome": "Aveirense",
+        "morada": "Rua de Coimbra, 13 – Aveiro",
+        "telefones": [
+          "+351 234 424 833"
+        ],
+        "maps": "https://maps.app.goo.gl/vm7NDfFqed8EsoRo7"
+      },
+      "avenida": {
+        "nome": "Avenida",
+        "morada": "Avenida Dr. Lourenço Peixinho, 308 – Aveiro",
+        "telefones": [
+          "+351 234 384 724"
+        ],
+        "maps": "https://maps.app.goo.gl/W53ezVZ26FJs9xkk6"
+      },
+      "capao_filipe": {
+        "nome": "Capão Filipe",
+        "morada": "Rua D. Sancho I, 33 – Aveiro",
+        "telefones": [
+          "+351 234 313 276"
+        ],
+        "maps": "https://maps.app.goo.gl/BnQVy74uEEjMVQxN9"
+      },
+      "central": {
+        "nome": "Central",
+        "morada": "Rua dos Mercadores, 26-28 – Aveiro",
+        "telefones": [
+          "+351 234 423 870"
+        ],
+        "maps": "https://maps.app.goo.gl/kxkmvXETPYzDMoco8"
+      },
+      "higiene": {
+        "nome": "Higiene",
+        "morada": "Rua José Luciano de Castro, 162 – Esgueira",
+        "telefones": [
+          "+351 234 312 680"
+        ],
+        "maps": "https://maps.app.goo.gl/gb4MgLohYpnJDvJz9"
+      },
+      "lemos": {
+        "nome": "Lemos",
+        "morada": "Rua S. Brás, 150 – Santa Joana",
+        "telefones": [
+          "+351 234 341 086"
+        ],
+        "maps": "https://maps.app.goo.gl/pJtxeaetjBw64SE17"
+      },
+      "moderna": {
+        "nome": "Moderna",
+        "morada": "Rua Combatentes Grande Guerra, 103 – Aveiro",
+        "telefones": [
+          "+351 234 481 050"
+        ],
+        "maps": "https://maps.app.goo.gl/NmCsnuerRwhPUu2K7"
+      },
+      "moura_glicinias": {
+        "nome": "Moura Glicínias",
+        "morada": "Glicínias Plaza – Rua D. Manuel Barbuda e Vasconcelos, Lj 40 – Aveiro",
+        "telefones": [
+          "+351 234 422 014"
+        ],
+        "maps": "https://maps.app.goo.gl/vs78ZnyTc6G5mojq5"
+      },
+      "neto": {
+        "nome": "Neto",
+        "morada": "Rua Passos Manuel, 4-A – Aveiro",
+        "telefones": [
+          "+351 234 423 286"
+        ],
+        "maps": "https://maps.app.goo.gl/v5sDzHBzttAVhhQNA"
+      },
+      "nova": {
+        "nome": "Nova",
+        "morada": "Rua Dr. Mário Sacramento, 131 R/C Esq. – Glória",
+        "telefones": [
+          "+351 234 933 286"
+        ],
+        "maps": "https://maps.app.goo.gl/t2AeLEtSWqoZGQdc7"
+      },
+      "oudinot": {
+        "nome": "Oudinot",
+        "morada": "Av. Dr. Lourenço Peixinho, 145 – Aveiro",
+        "telefones": [
+          "+351 234 423 644"
+        ],
+        "maps": "https://maps.app.goo.gl/YsFYgbHyjbX8jUC76"
+      },
+      "peixinho": {
+        "nome": "Peixinho",
+        "morada": "Rua do Conego Maio, 76-78 – Aveiro",
+        "telefones": [
+          "+351 234 343 224"
+        ],
+        "maps": "https://maps.app.goo.gl/u5r7wNh8duj3Jehw6"
+      },
+      "saude": {
+        "nome": "Saúde",
+        "morada": "Rua de São Sebastião, 102 – Aveiro",
+        "telefones": [
+          "+351 234 422 569"
+        ],
+        "maps": "https://maps.app.goo.gl/6twZcVbfBkpQFz7H9"
+      }
+    }
+  },
+  "calendario": {
+    "ilhavo": [
+      {
+        "data": "2026-01-01",
+        "farmacias": [
+          "do_cais"
+        ]
+      },
+      {
+        "data": "2026-01-02",
+        "farmacias": [
+          "morais",
+          "santos"
+        ]
+      },
+      {
+        "data": "2026-01-03",
+        "farmacias": [
+          "anca_castro",
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-01-04",
+        "farmacias": [
+          "senos"
+        ]
+      },
+      {
+        "data": "2026-01-05",
+        "farmacias": [
+          "ribau",
+          "do_cais"
+        ]
+      },
+      {
+        "data": "2026-01-06",
+        "farmacias": [
+          "santos"
+        ]
+      },
+      {
+        "data": "2026-01-07",
+        "farmacias": [
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-01-08",
+        "farmacias": [
+          "branco",
+          "senos"
+        ]
+      },
+      {
+        "data": "2026-01-09",
+        "farmacias": [
+          "do_cais"
+        ]
+      },
+      {
+        "data": "2026-01-10",
+        "farmacias": [
+          "morais",
+          "santos"
+        ]
+      },
+      {
+        "data": "2026-01-11",
+        "farmacias": [
+          "anca_castro",
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-01-12",
+        "farmacias": [
+          "senos"
+        ]
+      },
+      {
+        "data": "2026-01-13",
+        "farmacias": [
+          "ribau",
+          "do_cais"
+        ]
+      },
+      {
+        "data": "2026-01-14",
+        "farmacias": [
+          "santos"
+        ]
+      },
+      {
+        "data": "2026-01-15",
+        "farmacias": [
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-01-16",
+        "farmacias": [
+          "branco",
+          "senos"
+        ]
+      },
+      {
+        "data": "2026-01-17",
+        "farmacias": [
+          "do_cais"
+        ]
+      },
+      {
+        "data": "2026-01-18",
+        "farmacias": [
+          "morais",
+          "santos"
+        ]
+      },
+      {
+        "data": "2026-01-19",
+        "farmacias": [
+          "anca_castro",
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-01-20",
+        "farmacias": [
+          "senos"
+        ]
+      },
+      {
+        "data": "2026-01-21",
+        "farmacias": [
+          "ribau",
+          "do_cais"
+        ]
+      },
+      {
+        "data": "2026-01-22",
+        "farmacias": [
+          "santos"
+        ]
+      },
+      {
+        "data": "2026-01-23",
+        "farmacias": [
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-01-24",
+        "farmacias": [
+          "branco",
+          "senos"
+        ]
+      },
+      {
+        "data": "2026-01-25",
+        "farmacias": [
+          "do_cais"
+        ]
+      },
+      {
+        "data": "2026-01-26",
+        "farmacias": [
+          "morais",
+          "santos"
+        ]
+      },
+      {
+        "data": "2026-01-27",
+        "farmacias": [
+          "anca_castro",
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-01-28",
+        "farmacias": [
+          "senos"
+        ]
+      },
+      {
+        "data": "2026-01-29",
+        "farmacias": [
+          "ribau",
+          "do_cais"
+        ]
+      },
+      {
+        "data": "2026-01-30",
+        "farmacias": [
+          "santos"
+        ]
+      },
+      {
+        "data": "2026-01-31",
+        "farmacias": [
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-02-01",
+        "farmacias": [
+          "branco",
+          "senos"
+        ]
+      },
+      {
+        "data": "2026-02-02",
+        "farmacias": [
+          "do_cais"
+        ]
+      },
+      {
+        "data": "2026-02-03",
+        "farmacias": [
+          "morais",
+          "santos"
+        ]
+      },
+      {
+        "data": "2026-02-04",
+        "farmacias": [
+          "anca_castro",
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-02-05",
+        "farmacias": [
+          "senos"
+        ]
+      },
+      {
+        "data": "2026-02-06",
+        "farmacias": [
+          "ribau",
+          "do_cais"
+        ]
+      },
+      {
+        "data": "2026-02-07",
+        "farmacias": [
+          "santos"
+        ]
+      },
+      {
+        "data": "2026-02-08",
+        "farmacias": [
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-02-09",
+        "farmacias": [
+          "branco",
+          "senos"
+        ]
+      },
+      {
+        "data": "2026-02-10",
+        "farmacias": [
+          "do_cais"
+        ]
+      },
+      {
+        "data": "2026-02-11",
+        "farmacias": [
+          "morais",
+          "santos"
+        ]
+      },
+      {
+        "data": "2026-02-12",
+        "farmacias": [
+          "anca_castro",
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-02-13",
+        "farmacias": [
+          "senos"
+        ]
+      },
+      {
+        "data": "2026-02-14",
+        "farmacias": [
+          "ribau",
+          "do_cais"
+        ]
+      },
+      {
+        "data": "2026-02-15",
+        "farmacias": [
+          "santos"
+        ]
+      },
+      {
+        "data": "2026-02-16",
+        "farmacias": [
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-02-17",
+        "farmacias": [
+          "branco",
+          "senos"
+        ]
+      },
+      {
+        "data": "2026-02-18",
+        "farmacias": [
+          "do_cais"
+        ]
+      },
+      {
+        "data": "2026-02-19",
+        "farmacias": [
+          "morais",
+          "santos"
+        ]
+      },
+      {
+        "data": "2026-02-20",
+        "farmacias": [
+          "anca_castro",
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-02-21",
+        "farmacias": [
+          "senos"
+        ]
+      },
+      {
+        "data": "2026-02-22",
+        "farmacias": [
+          "ribau",
+          "do_cais"
+        ]
+      },
+      {
+        "data": "2026-02-23",
+        "farmacias": [
+          "santos"
+        ]
+      },
+      {
+        "data": "2026-02-24",
+        "farmacias": [
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-02-25",
+        "farmacias": [
+          "branco",
+          "senos"
+        ]
+      },
+      {
+        "data": "2026-02-26",
+        "farmacias": [
+          "do_cais"
+        ]
+      },
+      {
+        "data": "2026-02-27",
+        "farmacias": [
+          "morais",
+          "santos"
+        ]
+      },
+      {
+        "data": "2026-02-28",
+        "farmacias": [
+          "anca_castro",
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-03-01",
+        "farmacias": [
+          "senos"
+        ]
+      },
+      {
+        "data": "2026-03-02",
+        "farmacias": [
+          "ribau",
+          "do_cais"
+        ]
+      },
+      {
+        "data": "2026-03-03",
+        "farmacias": [
+          "santos"
+        ]
+      },
+      {
+        "data": "2026-03-04",
+        "farmacias": [
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-03-05",
+        "farmacias": [
+          "branco",
+          "senos"
+        ]
+      },
+      {
+        "data": "2026-03-06",
+        "farmacias": [
+          "do_cais"
+        ]
+      },
+      {
+        "data": "2026-03-07",
+        "farmacias": [
+          "morais",
+          "santos"
+        ]
+      },
+      {
+        "data": "2026-03-08",
+        "farmacias": [
+          "anca_castro",
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-03-09",
+        "farmacias": [
+          "senos"
+        ]
+      },
+      {
+        "data": "2026-03-10",
+        "farmacias": [
+          "ribau",
+          "do_cais"
+        ]
+      },
+      {
+        "data": "2026-03-11",
+        "farmacias": [
+          "santos"
+        ]
+      },
+      {
+        "data": "2026-03-12",
+        "farmacias": [
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-03-13",
+        "farmacias": [
+          "branco",
+          "senos"
+        ]
+      },
+      {
+        "data": "2026-03-14",
+        "farmacias": [
+          "do_cais"
+        ]
+      },
+      {
+        "data": "2026-03-15",
+        "farmacias": [
+          "morais",
+          "santos"
+        ]
+      },
+      {
+        "data": "2026-03-16",
+        "farmacias": [
+          "anca_castro",
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-03-17",
+        "farmacias": [
+          "senos"
+        ]
+      },
+      {
+        "data": "2026-03-18",
+        "farmacias": [
+          "ribau",
+          "do_cais"
+        ]
+      },
+      {
+        "data": "2026-03-19",
+        "farmacias": [
+          "santos"
+        ]
+      },
+      {
+        "data": "2026-03-20",
+        "farmacias": [
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-03-21",
+        "farmacias": [
+          "branco",
+          "senos"
+        ]
+      },
+      {
+        "data": "2026-03-22",
+        "farmacias": [
+          "do_cais"
+        ]
+      },
+      {
+        "data": "2026-03-23",
+        "farmacias": [
+          "morais",
+          "santos"
+        ]
+      },
+      {
+        "data": "2026-03-24",
+        "farmacias": [
+          "anca_castro",
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-03-25",
+        "farmacias": [
+          "senos"
+        ]
+      },
+      {
+        "data": "2026-03-26",
+        "farmacias": [
+          "ribau",
+          "do_cais"
+        ]
+      },
+      {
+        "data": "2026-03-27",
+        "farmacias": [
+          "santos"
+        ]
+      },
+      {
+        "data": "2026-03-28",
+        "farmacias": [
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-03-29",
+        "farmacias": [
+          "branco",
+          "senos"
+        ]
+      },
+      {
+        "data": "2026-03-30",
+        "farmacias": [
+          "do_cais"
+        ]
+      },
+      {
+        "data": "2026-03-31",
+        "farmacias": [
+          "morais",
+          "santos"
+        ]
+      },
+      {
+        "data": "2026-04-01",
+        "farmacias": [
+          "anca_castro",
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-04-02",
+        "farmacias": [
+          "senos"
+        ]
+      },
+      {
+        "data": "2026-04-03",
+        "farmacias": [
+          "ribau",
+          "do_cais"
+        ]
+      },
+      {
+        "data": "2026-04-04",
+        "farmacias": [
+          "santos"
+        ]
+      },
+      {
+        "data": "2026-04-05",
+        "farmacias": [
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-04-06",
+        "farmacias": [
+          "branco",
+          "senos"
+        ]
+      },
+      {
+        "data": "2026-04-07",
+        "farmacias": [
+          "do_cais"
+        ]
+      },
+      {
+        "data": "2026-04-08",
+        "farmacias": [
+          "morais",
+          "santos"
+        ]
+      },
+      {
+        "data": "2026-04-09",
+        "farmacias": [
+          "anca_castro",
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-04-10",
+        "farmacias": [
+          "senos"
+        ]
+      },
+      {
+        "data": "2026-04-11",
+        "farmacias": [
+          "ribau",
+          "do_cais"
+        ]
+      },
+      {
+        "data": "2026-04-12",
+        "farmacias": [
+          "santos"
+        ]
+      },
+      {
+        "data": "2026-04-13",
+        "farmacias": [
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-04-14",
+        "farmacias": [
+          "branco",
+          "senos"
+        ]
+      },
+      {
+        "data": "2026-04-15",
+        "farmacias": [
+          "do_cais"
+        ]
+      },
+      {
+        "data": "2026-04-16",
+        "farmacias": [
+          "morais",
+          "santos"
+        ]
+      },
+      {
+        "data": "2026-04-17",
+        "farmacias": [
+          "anca_castro",
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-04-18",
+        "farmacias": [
+          "senos"
+        ]
+      },
+      {
+        "data": "2026-04-19",
+        "farmacias": [
+          "ribau",
+          "do_cais"
+        ]
+      },
+      {
+        "data": "2026-04-20",
+        "farmacias": [
+          "santos"
+        ]
+      },
+      {
+        "data": "2026-04-21",
+        "farmacias": [
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-04-22",
+        "farmacias": [
+          "branco",
+          "senos"
+        ]
+      },
+      {
+        "data": "2026-04-23",
+        "farmacias": [
+          "do_cais"
+        ]
+      },
+      {
+        "data": "2026-04-24",
+        "farmacias": [
+          "morais",
+          "santos"
+        ]
+      },
+      {
+        "data": "2026-04-25",
+        "farmacias": [
+          "anca_castro",
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-04-26",
+        "farmacias": [
+          "senos"
+        ]
+      },
+      {
+        "data": "2026-04-27",
+        "farmacias": [
+          "ribau",
+          "do_cais"
+        ]
+      },
+      {
+        "data": "2026-04-28",
+        "farmacias": [
+          "santos"
+        ]
+      },
+      {
+        "data": "2026-04-29",
+        "farmacias": [
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-04-30",
+        "farmacias": [
+          "branco",
+          "senos"
+        ]
+      },
+      {
+        "data": "2026-05-01",
+        "farmacias": [
+          "do_cais"
+        ]
+      },
+      {
+        "data": "2026-05-02",
+        "farmacias": [
+          "morais",
+          "santos"
+        ]
+      },
+      {
+        "data": "2026-05-03",
+        "farmacias": [
+          "anca_castro",
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-05-04",
+        "farmacias": [
+          "senos"
+        ]
+      },
+      {
+        "data": "2026-05-05",
+        "farmacias": [
+          "ribau",
+          "do_cais"
+        ]
+      },
+      {
+        "data": "2026-05-06",
+        "farmacias": [
+          "santos"
+        ]
+      },
+      {
+        "data": "2026-05-07",
+        "farmacias": [
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-05-08",
+        "farmacias": [
+          "branco",
+          "senos"
+        ]
+      },
+      {
+        "data": "2026-05-09",
+        "farmacias": [
+          "do_cais"
+        ]
+      },
+      {
+        "data": "2026-05-10",
+        "farmacias": [
+          "morais",
+          "santos"
+        ]
+      },
+      {
+        "data": "2026-05-11",
+        "farmacias": [
+          "anca_castro",
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-05-12",
+        "farmacias": [
+          "senos"
+        ]
+      },
+      {
+        "data": "2026-05-13",
+        "farmacias": [
+          "ribau",
+          "do_cais"
+        ]
+      },
+      {
+        "data": "2026-05-14",
+        "farmacias": [
+          "santos"
+        ]
+      },
+      {
+        "data": "2026-05-15",
+        "farmacias": [
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-05-16",
+        "farmacias": [
+          "branco",
+          "senos"
+        ]
+      },
+      {
+        "data": "2026-05-17",
+        "farmacias": [
+          "do_cais"
+        ]
+      },
+      {
+        "data": "2026-05-18",
+        "farmacias": [
+          "morais",
+          "santos"
+        ]
+      },
+      {
+        "data": "2026-05-19",
+        "farmacias": [
+          "anca_castro",
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-05-20",
+        "farmacias": [
+          "senos"
+        ]
+      },
+      {
+        "data": "2026-05-21",
+        "farmacias": [
+          "ribau",
+          "do_cais"
+        ]
+      },
+      {
+        "data": "2026-05-22",
+        "farmacias": [
+          "santos"
+        ]
+      },
+      {
+        "data": "2026-05-23",
+        "farmacias": [
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-05-24",
+        "farmacias": [
+          "branco",
+          "senos"
+        ]
+      },
+      {
+        "data": "2026-05-25",
+        "farmacias": [
+          "do_cais"
+        ]
+      },
+      {
+        "data": "2026-05-26",
+        "farmacias": [
+          "morais",
+          "santos"
+        ]
+      },
+      {
+        "data": "2026-05-27",
+        "farmacias": [
+          "anca_castro",
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-05-28",
+        "farmacias": [
+          "senos"
+        ]
+      },
+      {
+        "data": "2026-05-29",
+        "farmacias": [
+          "ribau",
+          "do_cais"
+        ]
+      },
+      {
+        "data": "2026-05-30",
+        "farmacias": [
+          "santos"
+        ]
+      },
+      {
+        "data": "2026-05-31",
+        "farmacias": [
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-06-01",
+        "farmacias": [
+          "branco",
+          "senos"
+        ]
+      },
+      {
+        "data": "2026-06-02",
+        "farmacias": [
+          "do_cais"
+        ]
+      },
+      {
+        "data": "2026-06-03",
+        "farmacias": [
+          "morais",
+          "santos"
+        ]
+      },
+      {
+        "data": "2026-06-04",
+        "farmacias": [
+          "anca_castro",
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-06-05",
+        "farmacias": [
+          "senos"
+        ]
+      },
+      {
+        "data": "2026-06-06",
+        "farmacias": [
+          "ribau",
+          "do_cais"
+        ]
+      },
+      {
+        "data": "2026-06-07",
+        "farmacias": [
+          "santos"
+        ]
+      },
+      {
+        "data": "2026-06-08",
+        "farmacias": [
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-06-09",
+        "farmacias": [
+          "branco",
+          "senos"
+        ]
+      },
+      {
+        "data": "2026-06-10",
+        "farmacias": [
+          "do_cais"
+        ]
+      },
+      {
+        "data": "2026-06-11",
+        "farmacias": [
+          "morais",
+          "santos"
+        ]
+      },
+      {
+        "data": "2026-06-12",
+        "farmacias": [
+          "anca_castro",
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-06-13",
+        "farmacias": [
+          "senos"
+        ]
+      },
+      {
+        "data": "2026-06-14",
+        "farmacias": [
+          "ribau",
+          "do_cais"
+        ]
+      },
+      {
+        "data": "2026-06-15",
+        "farmacias": [
+          "santos"
+        ]
+      },
+      {
+        "data": "2026-06-16",
+        "farmacias": [
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-06-17",
+        "farmacias": [
+          "branco",
+          "senos"
+        ]
+      },
+      {
+        "data": "2026-06-18",
+        "farmacias": [
+          "do_cais"
+        ]
+      },
+      {
+        "data": "2026-06-19",
+        "farmacias": [
+          "morais",
+          "santos"
+        ]
+      },
+      {
+        "data": "2026-06-20",
+        "farmacias": [
+          "anca_castro",
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-06-21",
+        "farmacias": [
+          "senos"
+        ]
+      },
+      {
+        "data": "2026-06-22",
+        "farmacias": [
+          "ribau",
+          "do_cais"
+        ]
+      },
+      {
+        "data": "2026-06-23",
+        "farmacias": [
+          "santos"
+        ]
+      },
+      {
+        "data": "2026-06-24",
+        "farmacias": [
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-06-25",
+        "farmacias": [
+          "branco",
+          "senos"
+        ]
+      },
+      {
+        "data": "2026-06-26",
+        "farmacias": [
+          "do_cais"
+        ]
+      },
+      {
+        "data": "2026-06-27",
+        "farmacias": [
+          "morais",
+          "santos"
+        ]
+      },
+      {
+        "data": "2026-06-28",
+        "farmacias": [
+          "anca_castro",
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-06-29",
+        "farmacias": [
+          "senos"
+        ]
+      },
+      {
+        "data": "2026-06-30",
+        "farmacias": [
+          "ribau",
+          "do_cais"
+        ]
+      },
+      {
+        "data": "2026-07-01",
+        "farmacias": [
+          "santos"
+        ]
+      },
+      {
+        "data": "2026-07-02",
+        "farmacias": [
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-07-03",
+        "farmacias": [
+          "branco",
+          "senos"
+        ]
+      },
+      {
+        "data": "2026-07-04",
+        "farmacias": [
+          "do_cais"
+        ]
+      },
+      {
+        "data": "2026-07-05",
+        "farmacias": [
+          "morais",
+          "santos"
+        ]
+      },
+      {
+        "data": "2026-07-06",
+        "farmacias": [
+          "anca_castro",
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-07-07",
+        "farmacias": [
+          "senos"
+        ]
+      },
+      {
+        "data": "2026-07-08",
+        "farmacias": [
+          "ribau",
+          "do_cais"
+        ]
+      },
+      {
+        "data": "2026-07-09",
+        "farmacias": [
+          "santos"
+        ]
+      },
+      {
+        "data": "2026-07-10",
+        "farmacias": [
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-07-11",
+        "farmacias": [
+          "branco",
+          "senos"
+        ]
+      },
+      {
+        "data": "2026-07-12",
+        "farmacias": [
+          "do_cais"
+        ]
+      },
+      {
+        "data": "2026-07-13",
+        "farmacias": [
+          "morais",
+          "santos"
+        ]
+      },
+      {
+        "data": "2026-07-14",
+        "farmacias": [
+          "anca_castro",
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-07-15",
+        "farmacias": [
+          "senos"
+        ]
+      },
+      {
+        "data": "2026-07-16",
+        "farmacias": [
+          "ribau",
+          "do_cais"
+        ]
+      },
+      {
+        "data": "2026-07-17",
+        "farmacias": [
+          "santos"
+        ]
+      },
+      {
+        "data": "2026-07-18",
+        "farmacias": [
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-07-19",
+        "farmacias": [
+          "branco",
+          "senos"
+        ]
+      },
+      {
+        "data": "2026-07-20",
+        "farmacias": [
+          "do_cais"
+        ]
+      },
+      {
+        "data": "2026-07-21",
+        "farmacias": [
+          "morais",
+          "santos"
+        ]
+      },
+      {
+        "data": "2026-07-22",
+        "farmacias": [
+          "anca_castro",
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-07-23",
+        "farmacias": [
+          "senos"
+        ]
+      },
+      {
+        "data": "2026-07-24",
+        "farmacias": [
+          "ribau",
+          "do_cais"
+        ]
+      },
+      {
+        "data": "2026-07-25",
+        "farmacias": [
+          "santos"
+        ]
+      },
+      {
+        "data": "2026-07-26",
+        "farmacias": [
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-07-27",
+        "farmacias": [
+          "branco",
+          "senos"
+        ]
+      },
+      {
+        "data": "2026-07-28",
+        "farmacias": [
+          "do_cais"
+        ]
+      },
+      {
+        "data": "2026-07-29",
+        "farmacias": [
+          "morais",
+          "santos"
+        ]
+      },
+      {
+        "data": "2026-07-30",
+        "farmacias": [
+          "anca_castro",
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-07-31",
+        "farmacias": [
+          "senos"
+        ]
+      },
+      {
+        "data": "2026-08-01",
+        "farmacias": [
+          "ribau",
+          "do_cais"
+        ]
+      },
+      {
+        "data": "2026-08-02",
+        "farmacias": [
+          "santos"
+        ]
+      },
+      {
+        "data": "2026-08-03",
+        "farmacias": [
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-08-04",
+        "farmacias": [
+          "branco",
+          "senos"
+        ]
+      },
+      {
+        "data": "2026-08-05",
+        "farmacias": [
+          "do_cais"
+        ]
+      },
+      {
+        "data": "2026-08-06",
+        "farmacias": [
+          "morais",
+          "santos"
+        ]
+      },
+      {
+        "data": "2026-08-07",
+        "farmacias": [
+          "anca_castro",
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-08-08",
+        "farmacias": [
+          "senos"
+        ]
+      },
+      {
+        "data": "2026-08-09",
+        "farmacias": [
+          "ribau",
+          "do_cais"
+        ]
+      },
+      {
+        "data": "2026-08-10",
+        "farmacias": [
+          "santos"
+        ]
+      },
+      {
+        "data": "2026-08-11",
+        "farmacias": [
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-08-12",
+        "farmacias": [
+          "branco",
+          "senos"
+        ]
+      },
+      {
+        "data": "2026-08-13",
+        "farmacias": [
+          "do_cais"
+        ]
+      },
+      {
+        "data": "2026-08-14",
+        "farmacias": [
+          "morais",
+          "santos"
+        ]
+      },
+      {
+        "data": "2026-08-15",
+        "farmacias": [
+          "anca_castro",
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-08-16",
+        "farmacias": [
+          "senos"
+        ]
+      },
+      {
+        "data": "2026-08-17",
+        "farmacias": [
+          "ribau",
+          "do_cais"
+        ]
+      },
+      {
+        "data": "2026-08-18",
+        "farmacias": [
+          "santos"
+        ]
+      },
+      {
+        "data": "2026-08-19",
+        "farmacias": [
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-08-20",
+        "farmacias": [
+          "branco",
+          "senos"
+        ]
+      },
+      {
+        "data": "2026-08-21",
+        "farmacias": [
+          "do_cais"
+        ]
+      },
+      {
+        "data": "2026-08-22",
+        "farmacias": [
+          "morais",
+          "santos"
+        ]
+      },
+      {
+        "data": "2026-08-23",
+        "farmacias": [
+          "anca_castro",
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-08-24",
+        "farmacias": [
+          "senos"
+        ]
+      },
+      {
+        "data": "2026-08-25",
+        "farmacias": [
+          "ribau",
+          "do_cais"
+        ]
+      },
+      {
+        "data": "2026-08-26",
+        "farmacias": [
+          "santos"
+        ]
+      },
+      {
+        "data": "2026-08-27",
+        "farmacias": [
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-08-28",
+        "farmacias": [
+          "branco",
+          "senos"
+        ]
+      },
+      {
+        "data": "2026-08-29",
+        "farmacias": [
+          "do_cais"
+        ]
+      },
+      {
+        "data": "2026-08-30",
+        "farmacias": [
+          "morais",
+          "santos"
+        ]
+      },
+      {
+        "data": "2026-08-31",
+        "farmacias": [
+          "anca_castro",
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-09-01",
+        "farmacias": [
+          "senos"
+        ]
+      },
+      {
+        "data": "2026-09-02",
+        "farmacias": [
+          "ribau",
+          "do_cais"
+        ]
+      },
+      {
+        "data": "2026-09-03",
+        "farmacias": [
+          "santos"
+        ]
+      },
+      {
+        "data": "2026-09-04",
+        "farmacias": [
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-09-05",
+        "farmacias": [
+          "branco",
+          "senos"
+        ]
+      },
+      {
+        "data": "2026-09-06",
+        "farmacias": [
+          "do_cais"
+        ]
+      },
+      {
+        "data": "2026-09-07",
+        "farmacias": [
+          "morais",
+          "santos"
+        ]
+      },
+      {
+        "data": "2026-09-08",
+        "farmacias": [
+          "anca_castro",
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-09-09",
+        "farmacias": [
+          "senos"
+        ]
+      },
+      {
+        "data": "2026-09-10",
+        "farmacias": [
+          "ribau",
+          "do_cais"
+        ]
+      },
+      {
+        "data": "2026-09-11",
+        "farmacias": [
+          "santos"
+        ]
+      },
+      {
+        "data": "2026-09-12",
+        "farmacias": [
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-09-13",
+        "farmacias": [
+          "branco",
+          "senos"
+        ]
+      },
+      {
+        "data": "2026-09-14",
+        "farmacias": [
+          "do_cais"
+        ]
+      },
+      {
+        "data": "2026-09-15",
+        "farmacias": [
+          "morais",
+          "santos"
+        ]
+      },
+      {
+        "data": "2026-09-16",
+        "farmacias": [
+          "anca_castro",
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-09-17",
+        "farmacias": [
+          "senos"
+        ]
+      },
+      {
+        "data": "2026-09-18",
+        "farmacias": [
+          "ribau",
+          "do_cais"
+        ]
+      },
+      {
+        "data": "2026-09-19",
+        "farmacias": [
+          "santos"
+        ]
+      },
+      {
+        "data": "2026-09-20",
+        "farmacias": [
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-09-21",
+        "farmacias": [
+          "branco",
+          "senos"
+        ]
+      },
+      {
+        "data": "2026-09-22",
+        "farmacias": [
+          "do_cais"
+        ]
+      },
+      {
+        "data": "2026-09-23",
+        "farmacias": [
+          "morais",
+          "santos"
+        ]
+      },
+      {
+        "data": "2026-09-24",
+        "farmacias": [
+          "anca_castro",
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-09-25",
+        "farmacias": [
+          "senos"
+        ]
+      },
+      {
+        "data": "2026-09-26",
+        "farmacias": [
+          "ribau",
+          "do_cais"
+        ]
+      },
+      {
+        "data": "2026-09-27",
+        "farmacias": [
+          "santos"
+        ]
+      },
+      {
+        "data": "2026-09-28",
+        "farmacias": [
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-09-29",
+        "farmacias": [
+          "branco",
+          "senos"
+        ]
+      },
+      {
+        "data": "2026-09-30",
+        "farmacias": [
+          "do_cais"
+        ]
+      },
+      {
+        "data": "2026-10-01",
+        "farmacias": [
+          "morais",
+          "santos"
+        ]
+      },
+      {
+        "data": "2026-10-02",
+        "farmacias": [
+          "anca_castro",
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-10-03",
+        "farmacias": [
+          "senos"
+        ]
+      },
+      {
+        "data": "2026-10-04",
+        "farmacias": [
+          "ribau",
+          "do_cais"
+        ]
+      },
+      {
+        "data": "2026-10-05",
+        "farmacias": [
+          "santos"
+        ]
+      },
+      {
+        "data": "2026-10-06",
+        "farmacias": [
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-10-07",
+        "farmacias": [
+          "branco",
+          "senos"
+        ]
+      },
+      {
+        "data": "2026-10-08",
+        "farmacias": [
+          "do_cais"
+        ]
+      },
+      {
+        "data": "2026-10-09",
+        "farmacias": [
+          "morais",
+          "santos"
+        ]
+      },
+      {
+        "data": "2026-10-10",
+        "farmacias": [
+          "anca_castro",
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-10-11",
+        "farmacias": [
+          "senos"
+        ]
+      },
+      {
+        "data": "2026-10-12",
+        "farmacias": [
+          "ribau",
+          "do_cais"
+        ]
+      },
+      {
+        "data": "2026-10-13",
+        "farmacias": [
+          "santos"
+        ]
+      },
+      {
+        "data": "2026-10-14",
+        "farmacias": [
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-10-15",
+        "farmacias": [
+          "branco",
+          "senos"
+        ]
+      },
+      {
+        "data": "2026-10-16",
+        "farmacias": [
+          "do_cais"
+        ]
+      },
+      {
+        "data": "2026-10-17",
+        "farmacias": [
+          "morais",
+          "santos"
+        ]
+      },
+      {
+        "data": "2026-10-18",
+        "farmacias": [
+          "anca_castro",
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-10-19",
+        "farmacias": [
+          "senos"
+        ]
+      },
+      {
+        "data": "2026-10-20",
+        "farmacias": [
+          "ribau",
+          "do_cais"
+        ]
+      },
+      {
+        "data": "2026-10-21",
+        "farmacias": [
+          "santos"
+        ]
+      },
+      {
+        "data": "2026-10-22",
+        "farmacias": [
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-10-23",
+        "farmacias": [
+          "branco",
+          "senos"
+        ]
+      },
+      {
+        "data": "2026-10-24",
+        "farmacias": [
+          "do_cais"
+        ]
+      },
+      {
+        "data": "2026-10-25",
+        "farmacias": [
+          "morais",
+          "santos"
+        ]
+      },
+      {
+        "data": "2026-10-26",
+        "farmacias": [
+          "anca_castro",
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-10-27",
+        "farmacias": [
+          "senos"
+        ]
+      },
+      {
+        "data": "2026-10-28",
+        "farmacias": [
+          "ribau",
+          "do_cais"
+        ]
+      },
+      {
+        "data": "2026-10-29",
+        "farmacias": [
+          "santos"
+        ]
+      },
+      {
+        "data": "2026-10-30",
+        "farmacias": [
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-10-31",
+        "farmacias": [
+          "branco",
+          "senos"
+        ]
+      },
+      {
+        "data": "2026-11-01",
+        "farmacias": [
+          "do_cais"
+        ]
+      },
+      {
+        "data": "2026-11-02",
+        "farmacias": [
+          "morais",
+          "santos"
+        ]
+      },
+      {
+        "data": "2026-11-03",
+        "farmacias": [
+          "anca_castro",
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-11-04",
+        "farmacias": [
+          "senos"
+        ]
+      },
+      {
+        "data": "2026-11-05",
+        "farmacias": [
+          "ribau",
+          "do_cais"
+        ]
+      },
+      {
+        "data": "2026-11-06",
+        "farmacias": [
+          "santos"
+        ]
+      },
+      {
+        "data": "2026-11-07",
+        "farmacias": [
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-11-08",
+        "farmacias": [
+          "branco",
+          "senos"
+        ]
+      },
+      {
+        "data": "2026-11-09",
+        "farmacias": [
+          "do_cais"
+        ]
+      },
+      {
+        "data": "2026-11-10",
+        "farmacias": [
+          "morais",
+          "santos"
+        ]
+      },
+      {
+        "data": "2026-11-11",
+        "farmacias": [
+          "anca_castro",
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-11-12",
+        "farmacias": [
+          "senos"
+        ]
+      },
+      {
+        "data": "2026-11-13",
+        "farmacias": [
+          "ribau",
+          "do_cais"
+        ]
+      },
+      {
+        "data": "2026-11-14",
+        "farmacias": [
+          "santos"
+        ]
+      },
+      {
+        "data": "2026-11-15",
+        "farmacias": [
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-11-16",
+        "farmacias": [
+          "branco",
+          "senos"
+        ]
+      },
+      {
+        "data": "2026-11-17",
+        "farmacias": [
+          "do_cais"
+        ]
+      },
+      {
+        "data": "2026-11-18",
+        "farmacias": [
+          "morais",
+          "santos"
+        ]
+      },
+      {
+        "data": "2026-11-19",
+        "farmacias": [
+          "anca_castro",
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-11-20",
+        "farmacias": [
+          "senos"
+        ]
+      },
+      {
+        "data": "2026-11-21",
+        "farmacias": [
+          "ribau",
+          "do_cais"
+        ]
+      },
+      {
+        "data": "2026-11-22",
+        "farmacias": [
+          "santos"
+        ]
+      },
+      {
+        "data": "2026-11-23",
+        "farmacias": [
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-11-24",
+        "farmacias": [
+          "branco",
+          "senos"
+        ]
+      },
+      {
+        "data": "2026-11-25",
+        "farmacias": [
+          "do_cais"
+        ]
+      },
+      {
+        "data": "2026-11-26",
+        "farmacias": [
+          "morais",
+          "santos"
+        ]
+      },
+      {
+        "data": "2026-11-27",
+        "farmacias": [
+          "anca_castro",
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-11-28",
+        "farmacias": [
+          "senos"
+        ]
+      },
+      {
+        "data": "2026-11-29",
+        "farmacias": [
+          "ribau",
+          "do_cais"
+        ]
+      },
+      {
+        "data": "2026-11-30",
+        "farmacias": [
+          "santos"
+        ]
+      },
+      {
+        "data": "2026-12-01",
+        "farmacias": [
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-12-02",
+        "farmacias": [
+          "branco",
+          "senos"
+        ]
+      },
+      {
+        "data": "2026-12-03",
+        "farmacias": [
+          "do_cais"
+        ]
+      },
+      {
+        "data": "2026-12-04",
+        "farmacias": [
+          "morais",
+          "santos"
+        ]
+      },
+      {
+        "data": "2026-12-05",
+        "farmacias": [
+          "anca_castro",
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-12-06",
+        "farmacias": [
+          "senos"
+        ]
+      },
+      {
+        "data": "2026-12-07",
+        "farmacias": [
+          "ribau",
+          "do_cais"
+        ]
+      },
+      {
+        "data": "2026-12-08",
+        "farmacias": [
+          "santos"
+        ]
+      },
+      {
+        "data": "2026-12-09",
+        "farmacias": [
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-12-10",
+        "farmacias": [
+          "branco",
+          "senos"
+        ]
+      },
+      {
+        "data": "2026-12-11",
+        "farmacias": [
+          "do_cais"
+        ]
+      },
+      {
+        "data": "2026-12-12",
+        "farmacias": [
+          "morais",
+          "santos"
+        ]
+      },
+      {
+        "data": "2026-12-13",
+        "farmacias": [
+          "anca_castro",
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-12-14",
+        "farmacias": [
+          "senos"
+        ]
+      },
+      {
+        "data": "2026-12-15",
+        "farmacias": [
+          "ribau",
+          "do_cais"
+        ]
+      },
+      {
+        "data": "2026-12-16",
+        "farmacias": [
+          "santos"
+        ]
+      },
+      {
+        "data": "2026-12-17",
+        "farmacias": [
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-12-18",
+        "farmacias": [
+          "branco",
+          "senos"
+        ]
+      },
+      {
+        "data": "2026-12-19",
+        "farmacias": [
+          "do_cais"
+        ]
+      },
+      {
+        "data": "2026-12-20",
+        "farmacias": [
+          "morais",
+          "santos"
+        ]
+      },
+      {
+        "data": "2026-12-21",
+        "farmacias": [
+          "anca_castro",
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-12-22",
+        "farmacias": [
+          "senos"
+        ]
+      },
+      {
+        "data": "2026-12-23",
+        "farmacias": [
+          "ribau",
+          "do_cais"
+        ]
+      },
+      {
+        "data": "2026-12-24",
+        "farmacias": [
+          "santos"
+        ]
+      },
+      {
+        "data": "2026-12-25",
+        "farmacias": [
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-12-26",
+        "farmacias": [
+          "branco",
+          "senos"
+        ]
+      },
+      {
+        "data": "2026-12-27",
+        "farmacias": [
+          "do_cais"
+        ]
+      },
+      {
+        "data": "2026-12-28",
+        "farmacias": [
+          "morais",
+          "santos"
+        ]
+      },
+      {
+        "data": "2026-12-29",
+        "farmacias": [
+          "anca_castro",
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-12-30",
+        "farmacias": [
+          "senos"
+        ]
+      },
+      {
+        "data": "2026-12-31",
+        "farmacias": [
+          "ribau",
+          "do_cais"
+        ]
+      }
+    ],
+    "aveiro": [
+      {
+        "data": "2026-01-01",
+        "farmacias": [
+          "oudinot"
+        ]
+      },
+      {
+        "data": "2026-01-02",
+        "farmacias": [
+          "ala"
+        ]
+      },
+      {
+        "data": "2026-01-03",
+        "farmacias": [
+          "capao_filipe"
+        ]
+      },
+      {
+        "data": "2026-01-04",
+        "farmacias": [
+          "lemos"
+        ]
+      },
+      {
+        "data": "2026-01-05",
+        "farmacias": [
+          "peixinho"
+        ]
+      },
+      {
+        "data": "2026-01-06",
+        "farmacias": [
+          "nova"
+        ]
+      },
+      {
+        "data": "2026-01-07",
+        "farmacias": [
+          "alagoas"
+        ]
+      },
+      {
+        "data": "2026-01-08",
+        "farmacias": [
+          "neto"
+        ]
+      },
+      {
+        "data": "2026-01-09",
+        "farmacias": [
+          "moura_glicinias"
+        ]
+      },
+      {
+        "data": "2026-01-10",
+        "farmacias": [
+          "central"
+        ]
+      },
+      {
+        "data": "2026-01-11",
+        "farmacias": [
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-01-12",
+        "farmacias": [
+          "higiene"
+        ]
+      },
+      {
+        "data": "2026-01-13",
+        "farmacias": [
+          "aveirense"
+        ]
+      },
+      {
+        "data": "2026-01-14",
+        "farmacias": [
+          "avenida"
+        ]
+      },
+      {
+        "data": "2026-01-15",
+        "farmacias": [
+          "saude"
+        ]
+      },
+      {
+        "data": "2026-01-16",
+        "farmacias": [
+          "oudinot"
+        ]
+      },
+      {
+        "data": "2026-01-17",
+        "farmacias": [
+          "ala"
+        ]
+      },
+      {
+        "data": "2026-01-18",
+        "farmacias": [
+          "capao_filipe"
+        ]
+      },
+      {
+        "data": "2026-01-19",
+        "farmacias": [
+          "lemos"
+        ]
+      },
+      {
+        "data": "2026-01-20",
+        "farmacias": [
+          "peixinho"
+        ]
+      },
+      {
+        "data": "2026-01-21",
+        "farmacias": [
+          "nova"
+        ]
+      },
+      {
+        "data": "2026-01-22",
+        "farmacias": [
+          "alagoas"
+        ]
+      },
+      {
+        "data": "2026-01-23",
+        "farmacias": [
+          "neto"
+        ]
+      },
+      {
+        "data": "2026-01-24",
+        "farmacias": [
+          "moura_glicinias"
+        ]
+      },
+      {
+        "data": "2026-01-25",
+        "farmacias": [
+          "central"
+        ]
+      },
+      {
+        "data": "2026-01-26",
+        "farmacias": [
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-01-27",
+        "farmacias": [
+          "higiene"
+        ]
+      },
+      {
+        "data": "2026-01-28",
+        "farmacias": [
+          "aveirense"
+        ]
+      },
+      {
+        "data": "2026-01-29",
+        "farmacias": [
+          "avenida"
+        ]
+      },
+      {
+        "data": "2026-01-30",
+        "farmacias": [
+          "saude"
+        ]
+      },
+      {
+        "data": "2026-01-31",
+        "farmacias": [
+          "oudinot"
+        ]
+      },
+      {
+        "data": "2026-02-01",
+        "farmacias": [
+          "ala"
+        ]
+      },
+      {
+        "data": "2026-02-02",
+        "farmacias": [
+          "capao_filipe"
+        ]
+      },
+      {
+        "data": "2026-02-03",
+        "farmacias": [
+          "lemos"
+        ]
+      },
+      {
+        "data": "2026-02-04",
+        "farmacias": [
+          "peixinho"
+        ]
+      },
+      {
+        "data": "2026-02-05",
+        "farmacias": [
+          "nova"
+        ]
+      },
+      {
+        "data": "2026-02-06",
+        "farmacias": [
+          "alagoas"
+        ]
+      },
+      {
+        "data": "2026-02-07",
+        "farmacias": [
+          "neto"
+        ]
+      },
+      {
+        "data": "2026-02-08",
+        "farmacias": [
+          "moura_glicinias"
+        ]
+      },
+      {
+        "data": "2026-02-09",
+        "farmacias": [
+          "central"
+        ]
+      },
+      {
+        "data": "2026-02-10",
+        "farmacias": [
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-02-11",
+        "farmacias": [
+          "higiene"
+        ]
+      },
+      {
+        "data": "2026-02-12",
+        "farmacias": [
+          "aveirense"
+        ]
+      },
+      {
+        "data": "2026-02-13",
+        "farmacias": [
+          "avenida"
+        ]
+      },
+      {
+        "data": "2026-02-14",
+        "farmacias": [
+          "saude"
+        ]
+      },
+      {
+        "data": "2026-02-15",
+        "farmacias": [
+          "oudinot"
+        ]
+      },
+      {
+        "data": "2026-02-16",
+        "farmacias": [
+          "ala"
+        ]
+      },
+      {
+        "data": "2026-02-17",
+        "farmacias": [
+          "capao_filipe"
+        ]
+      },
+      {
+        "data": "2026-02-18",
+        "farmacias": [
+          "lemos"
+        ]
+      },
+      {
+        "data": "2026-02-19",
+        "farmacias": [
+          "peixinho"
+        ]
+      },
+      {
+        "data": "2026-02-20",
+        "farmacias": [
+          "nova"
+        ]
+      },
+      {
+        "data": "2026-02-21",
+        "farmacias": [
+          "alagoas"
+        ]
+      },
+      {
+        "data": "2026-02-22",
+        "farmacias": [
+          "neto"
+        ]
+      },
+      {
+        "data": "2026-02-23",
+        "farmacias": [
+          "moura_glicinias"
+        ]
+      },
+      {
+        "data": "2026-02-24",
+        "farmacias": [
+          "central"
+        ]
+      },
+      {
+        "data": "2026-02-25",
+        "farmacias": [
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-02-26",
+        "farmacias": [
+          "higiene"
+        ]
+      },
+      {
+        "data": "2026-02-27",
+        "farmacias": [
+          "aveirense"
+        ]
+      },
+      {
+        "data": "2026-02-28",
+        "farmacias": [
+          "avenida"
+        ]
+      },
+      {
+        "data": "2026-03-01",
+        "farmacias": [
+          "saude"
+        ]
+      },
+      {
+        "data": "2026-03-02",
+        "farmacias": [
+          "oudinot"
+        ]
+      },
+      {
+        "data": "2026-03-03",
+        "farmacias": [
+          "ala"
+        ]
+      },
+      {
+        "data": "2026-03-04",
+        "farmacias": [
+          "capao_filipe"
+        ]
+      },
+      {
+        "data": "2026-03-05",
+        "farmacias": [
+          "lemos"
+        ]
+      },
+      {
+        "data": "2026-03-06",
+        "farmacias": [
+          "peixinho"
+        ]
+      },
+      {
+        "data": "2026-03-07",
+        "farmacias": [
+          "nova"
+        ]
+      },
+      {
+        "data": "2026-03-08",
+        "farmacias": [
+          "alagoas"
+        ]
+      },
+      {
+        "data": "2026-03-09",
+        "farmacias": [
+          "neto"
+        ]
+      },
+      {
+        "data": "2026-03-10",
+        "farmacias": [
+          "moura_glicinias"
+        ]
+      },
+      {
+        "data": "2026-03-11",
+        "farmacias": [
+          "central"
+        ]
+      },
+      {
+        "data": "2026-03-12",
+        "farmacias": [
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-03-13",
+        "farmacias": [
+          "higiene"
+        ]
+      },
+      {
+        "data": "2026-03-14",
+        "farmacias": [
+          "aveirense"
+        ]
+      },
+      {
+        "data": "2026-03-15",
+        "farmacias": [
+          "avenida"
+        ]
+      },
+      {
+        "data": "2026-03-16",
+        "farmacias": [
+          "saude"
+        ]
+      },
+      {
+        "data": "2026-03-17",
+        "farmacias": [
+          "oudinot"
+        ]
+      },
+      {
+        "data": "2026-03-18",
+        "farmacias": [
+          "ala"
+        ]
+      },
+      {
+        "data": "2026-03-19",
+        "farmacias": [
+          "capao_filipe"
+        ]
+      },
+      {
+        "data": "2026-03-20",
+        "farmacias": [
+          "lemos"
+        ]
+      },
+      {
+        "data": "2026-03-21",
+        "farmacias": [
+          "peixinho"
+        ]
+      },
+      {
+        "data": "2026-03-22",
+        "farmacias": [
+          "nova"
+        ]
+      },
+      {
+        "data": "2026-03-23",
+        "farmacias": [
+          "alagoas"
+        ]
+      },
+      {
+        "data": "2026-03-24",
+        "farmacias": [
+          "neto"
+        ]
+      },
+      {
+        "data": "2026-03-25",
+        "farmacias": [
+          "moura_glicinias"
+        ]
+      },
+      {
+        "data": "2026-03-26",
+        "farmacias": [
+          "central"
+        ]
+      },
+      {
+        "data": "2026-03-27",
+        "farmacias": [
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-03-28",
+        "farmacias": [
+          "higiene"
+        ]
+      },
+      {
+        "data": "2026-03-29",
+        "farmacias": [
+          "aveirense"
+        ]
+      },
+      {
+        "data": "2026-03-30",
+        "farmacias": [
+          "avenida"
+        ]
+      },
+      {
+        "data": "2026-03-31",
+        "farmacias": [
+          "saude"
+        ]
+      },
+      {
+        "data": "2026-04-01",
+        "farmacias": [
+          "oudinot"
+        ]
+      },
+      {
+        "data": "2026-04-02",
+        "farmacias": [
+          "ala"
+        ]
+      },
+      {
+        "data": "2026-04-03",
+        "farmacias": [
+          "capao_filipe"
+        ]
+      },
+      {
+        "data": "2026-04-04",
+        "farmacias": [
+          "lemos"
+        ]
+      },
+      {
+        "data": "2026-04-05",
+        "farmacias": [
+          "peixinho"
+        ]
+      },
+      {
+        "data": "2026-04-06",
+        "farmacias": [
+          "nova"
+        ]
+      },
+      {
+        "data": "2026-04-07",
+        "farmacias": [
+          "alagoas"
+        ]
+      },
+      {
+        "data": "2026-04-08",
+        "farmacias": [
+          "neto"
+        ]
+      },
+      {
+        "data": "2026-04-09",
+        "farmacias": [
+          "moura_glicinias"
+        ]
+      },
+      {
+        "data": "2026-04-10",
+        "farmacias": [
+          "central"
+        ]
+      },
+      {
+        "data": "2026-04-11",
+        "farmacias": [
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-04-12",
+        "farmacias": [
+          "higiene"
+        ]
+      },
+      {
+        "data": "2026-04-13",
+        "farmacias": [
+          "aveirense"
+        ]
+      },
+      {
+        "data": "2026-04-14",
+        "farmacias": [
+          "avenida"
+        ]
+      },
+      {
+        "data": "2026-04-15",
+        "farmacias": [
+          "saude"
+        ]
+      },
+      {
+        "data": "2026-04-16",
+        "farmacias": [
+          "oudinot"
+        ]
+      },
+      {
+        "data": "2026-04-17",
+        "farmacias": [
+          "ala"
+        ]
+      },
+      {
+        "data": "2026-04-18",
+        "farmacias": [
+          "capao_filipe"
+        ]
+      },
+      {
+        "data": "2026-04-19",
+        "farmacias": [
+          "lemos"
+        ]
+      },
+      {
+        "data": "2026-04-20",
+        "farmacias": [
+          "peixinho"
+        ]
+      },
+      {
+        "data": "2026-04-21",
+        "farmacias": [
+          "nova"
+        ]
+      },
+      {
+        "data": "2026-04-22",
+        "farmacias": [
+          "alagoas"
+        ]
+      },
+      {
+        "data": "2026-04-23",
+        "farmacias": [
+          "neto"
+        ]
+      },
+      {
+        "data": "2026-04-24",
+        "farmacias": [
+          "moura_glicinias"
+        ]
+      },
+      {
+        "data": "2026-04-25",
+        "farmacias": [
+          "central"
+        ]
+      },
+      {
+        "data": "2026-04-26",
+        "farmacias": [
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-04-27",
+        "farmacias": [
+          "higiene"
+        ]
+      },
+      {
+        "data": "2026-04-28",
+        "farmacias": [
+          "aveirense"
+        ]
+      },
+      {
+        "data": "2026-04-29",
+        "farmacias": [
+          "avenida"
+        ]
+      },
+      {
+        "data": "2026-04-30",
+        "farmacias": [
+          "saude"
+        ]
+      },
+      {
+        "data": "2026-05-01",
+        "farmacias": [
+          "oudinot"
+        ]
+      },
+      {
+        "data": "2026-05-02",
+        "farmacias": [
+          "ala"
+        ]
+      },
+      {
+        "data": "2026-05-03",
+        "farmacias": [
+          "capao_filipe"
+        ]
+      },
+      {
+        "data": "2026-05-04",
+        "farmacias": [
+          "lemos"
+        ]
+      },
+      {
+        "data": "2026-05-05",
+        "farmacias": [
+          "peixinho"
+        ]
+      },
+      {
+        "data": "2026-05-06",
+        "farmacias": [
+          "nova"
+        ]
+      },
+      {
+        "data": "2026-05-07",
+        "farmacias": [
+          "alagoas"
+        ]
+      },
+      {
+        "data": "2026-05-08",
+        "farmacias": [
+          "neto"
+        ]
+      },
+      {
+        "data": "2026-05-09",
+        "farmacias": [
+          "moura_glicinias"
+        ]
+      },
+      {
+        "data": "2026-05-10",
+        "farmacias": [
+          "central"
+        ]
+      },
+      {
+        "data": "2026-05-11",
+        "farmacias": [
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-05-12",
+        "farmacias": [
+          "higiene"
+        ]
+      },
+      {
+        "data": "2026-05-13",
+        "farmacias": [
+          "aveirense"
+        ]
+      },
+      {
+        "data": "2026-05-14",
+        "farmacias": [
+          "avenida"
+        ]
+      },
+      {
+        "data": "2026-05-15",
+        "farmacias": [
+          "saude"
+        ]
+      },
+      {
+        "data": "2026-05-16",
+        "farmacias": [
+          "oudinot"
+        ]
+      },
+      {
+        "data": "2026-05-17",
+        "farmacias": [
+          "ala"
+        ]
+      },
+      {
+        "data": "2026-05-18",
+        "farmacias": [
+          "capao_filipe"
+        ]
+      },
+      {
+        "data": "2026-05-19",
+        "farmacias": [
+          "lemos"
+        ]
+      },
+      {
+        "data": "2026-05-20",
+        "farmacias": [
+          "peixinho"
+        ]
+      },
+      {
+        "data": "2026-05-21",
+        "farmacias": [
+          "nova"
+        ]
+      },
+      {
+        "data": "2026-05-22",
+        "farmacias": [
+          "alagoas"
+        ]
+      },
+      {
+        "data": "2026-05-23",
+        "farmacias": [
+          "neto"
+        ]
+      },
+      {
+        "data": "2026-05-24",
+        "farmacias": [
+          "moura_glicinias"
+        ]
+      },
+      {
+        "data": "2026-05-25",
+        "farmacias": [
+          "central"
+        ]
+      },
+      {
+        "data": "2026-05-26",
+        "farmacias": [
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-05-27",
+        "farmacias": [
+          "higiene"
+        ]
+      },
+      {
+        "data": "2026-05-28",
+        "farmacias": [
+          "aveirense"
+        ]
+      },
+      {
+        "data": "2026-05-29",
+        "farmacias": [
+          "avenida"
+        ]
+      },
+      {
+        "data": "2026-05-30",
+        "farmacias": [
+          "saude"
+        ]
+      },
+      {
+        "data": "2026-05-31",
+        "farmacias": [
+          "oudinot"
+        ]
+      },
+      {
+        "data": "2026-06-01",
+        "farmacias": [
+          "ala"
+        ]
+      },
+      {
+        "data": "2026-06-02",
+        "farmacias": [
+          "capao_filipe"
+        ]
+      },
+      {
+        "data": "2026-06-03",
+        "farmacias": [
+          "lemos"
+        ]
+      },
+      {
+        "data": "2026-06-04",
+        "farmacias": [
+          "peixinho"
+        ]
+      },
+      {
+        "data": "2026-06-05",
+        "farmacias": [
+          "nova"
+        ]
+      },
+      {
+        "data": "2026-06-06",
+        "farmacias": [
+          "alagoas"
+        ]
+      },
+      {
+        "data": "2026-06-07",
+        "farmacias": [
+          "neto"
+        ]
+      },
+      {
+        "data": "2026-06-08",
+        "farmacias": [
+          "moura_glicinias"
+        ]
+      },
+      {
+        "data": "2026-06-09",
+        "farmacias": [
+          "central"
+        ]
+      },
+      {
+        "data": "2026-06-10",
+        "farmacias": [
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-06-11",
+        "farmacias": [
+          "higiene"
+        ]
+      },
+      {
+        "data": "2026-06-12",
+        "farmacias": [
+          "aveirense"
+        ]
+      },
+      {
+        "data": "2026-06-13",
+        "farmacias": [
+          "avenida"
+        ]
+      },
+      {
+        "data": "2026-06-14",
+        "farmacias": [
+          "saude"
+        ]
+      },
+      {
+        "data": "2026-06-15",
+        "farmacias": [
+          "oudinot"
+        ]
+      },
+      {
+        "data": "2026-06-16",
+        "farmacias": [
+          "ala"
+        ]
+      },
+      {
+        "data": "2026-06-17",
+        "farmacias": [
+          "capao_filipe"
+        ]
+      },
+      {
+        "data": "2026-06-18",
+        "farmacias": [
+          "lemos"
+        ]
+      },
+      {
+        "data": "2026-06-19",
+        "farmacias": [
+          "peixinho"
+        ]
+      },
+      {
+        "data": "2026-06-20",
+        "farmacias": [
+          "nova"
+        ]
+      },
+      {
+        "data": "2026-06-21",
+        "farmacias": [
+          "alagoas"
+        ]
+      },
+      {
+        "data": "2026-06-22",
+        "farmacias": [
+          "neto"
+        ]
+      },
+      {
+        "data": "2026-06-23",
+        "farmacias": [
+          "moura_glicinias"
+        ]
+      },
+      {
+        "data": "2026-06-24",
+        "farmacias": [
+          "central"
+        ]
+      },
+      {
+        "data": "2026-06-25",
+        "farmacias": [
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-06-26",
+        "farmacias": [
+          "higiene"
+        ]
+      },
+      {
+        "data": "2026-06-27",
+        "farmacias": [
+          "aveirense"
+        ]
+      },
+      {
+        "data": "2026-06-28",
+        "farmacias": [
+          "avenida"
+        ]
+      },
+      {
+        "data": "2026-06-29",
+        "farmacias": [
+          "saude"
+        ]
+      },
+      {
+        "data": "2026-06-30",
+        "farmacias": [
+          "oudinot"
+        ]
+      },
+      {
+        "data": "2026-07-01",
+        "farmacias": [
+          "ala"
+        ]
+      },
+      {
+        "data": "2026-07-02",
+        "farmacias": [
+          "capao_filipe"
+        ]
+      },
+      {
+        "data": "2026-07-03",
+        "farmacias": [
+          "lemos"
+        ]
+      },
+      {
+        "data": "2026-07-04",
+        "farmacias": [
+          "peixinho"
+        ]
+      },
+      {
+        "data": "2026-07-05",
+        "farmacias": [
+          "nova"
+        ]
+      },
+      {
+        "data": "2026-07-06",
+        "farmacias": [
+          "alagoas"
+        ]
+      },
+      {
+        "data": "2026-07-07",
+        "farmacias": [
+          "neto"
+        ]
+      },
+      {
+        "data": "2026-07-08",
+        "farmacias": [
+          "moura_glicinias"
+        ]
+      },
+      {
+        "data": "2026-07-09",
+        "farmacias": [
+          "central"
+        ]
+      },
+      {
+        "data": "2026-07-10",
+        "farmacias": [
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-07-11",
+        "farmacias": [
+          "higiene"
+        ]
+      },
+      {
+        "data": "2026-07-12",
+        "farmacias": [
+          "aveirense"
+        ]
+      },
+      {
+        "data": "2026-07-13",
+        "farmacias": [
+          "avenida"
+        ]
+      },
+      {
+        "data": "2026-07-14",
+        "farmacias": [
+          "saude"
+        ]
+      },
+      {
+        "data": "2026-07-15",
+        "farmacias": [
+          "oudinot"
+        ]
+      },
+      {
+        "data": "2026-07-16",
+        "farmacias": [
+          "ala"
+        ]
+      },
+      {
+        "data": "2026-07-17",
+        "farmacias": [
+          "capao_filipe"
+        ]
+      },
+      {
+        "data": "2026-07-18",
+        "farmacias": [
+          "lemos"
+        ]
+      },
+      {
+        "data": "2026-07-19",
+        "farmacias": [
+          "peixinho"
+        ]
+      },
+      {
+        "data": "2026-07-20",
+        "farmacias": [
+          "nova"
+        ]
+      },
+      {
+        "data": "2026-07-21",
+        "farmacias": [
+          "alagoas"
+        ]
+      },
+      {
+        "data": "2026-07-22",
+        "farmacias": [
+          "neto"
+        ]
+      },
+      {
+        "data": "2026-07-23",
+        "farmacias": [
+          "moura_glicinias"
+        ]
+      },
+      {
+        "data": "2026-07-24",
+        "farmacias": [
+          "central"
+        ]
+      },
+      {
+        "data": "2026-07-25",
+        "farmacias": [
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-07-26",
+        "farmacias": [
+          "higiene"
+        ]
+      },
+      {
+        "data": "2026-07-27",
+        "farmacias": [
+          "aveirense"
+        ]
+      },
+      {
+        "data": "2026-07-28",
+        "farmacias": [
+          "avenida"
+        ]
+      },
+      {
+        "data": "2026-07-29",
+        "farmacias": [
+          "saude"
+        ]
+      },
+      {
+        "data": "2026-07-30",
+        "farmacias": [
+          "oudinot"
+        ]
+      },
+      {
+        "data": "2026-07-31",
+        "farmacias": [
+          "ala"
+        ]
+      },
+      {
+        "data": "2026-08-01",
+        "farmacias": [
+          "capao_filipe"
+        ]
+      },
+      {
+        "data": "2026-08-02",
+        "farmacias": [
+          "lemos"
+        ]
+      },
+      {
+        "data": "2026-08-03",
+        "farmacias": [
+          "peixinho"
+        ]
+      },
+      {
+        "data": "2026-08-04",
+        "farmacias": [
+          "nova"
+        ]
+      },
+      {
+        "data": "2026-08-05",
+        "farmacias": [
+          "alagoas"
+        ]
+      },
+      {
+        "data": "2026-08-06",
+        "farmacias": [
+          "neto"
+        ]
+      },
+      {
+        "data": "2026-08-07",
+        "farmacias": [
+          "moura_glicinias"
+        ]
+      },
+      {
+        "data": "2026-08-08",
+        "farmacias": [
+          "central"
+        ]
+      },
+      {
+        "data": "2026-08-09",
+        "farmacias": [
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-08-10",
+        "farmacias": [
+          "higiene"
+        ]
+      },
+      {
+        "data": "2026-08-11",
+        "farmacias": [
+          "aveirense"
+        ]
+      },
+      {
+        "data": "2026-08-12",
+        "farmacias": [
+          "avenida"
+        ]
+      },
+      {
+        "data": "2026-08-13",
+        "farmacias": [
+          "saude"
+        ]
+      },
+      {
+        "data": "2026-08-14",
+        "farmacias": [
+          "oudinot"
+        ]
+      },
+      {
+        "data": "2026-08-15",
+        "farmacias": [
+          "ala"
+        ]
+      },
+      {
+        "data": "2026-08-16",
+        "farmacias": [
+          "capao_filipe"
+        ]
+      },
+      {
+        "data": "2026-08-17",
+        "farmacias": [
+          "lemos"
+        ]
+      },
+      {
+        "data": "2026-08-18",
+        "farmacias": [
+          "peixinho"
+        ]
+      },
+      {
+        "data": "2026-08-19",
+        "farmacias": [
+          "nova"
+        ]
+      },
+      {
+        "data": "2026-08-20",
+        "farmacias": [
+          "alagoas"
+        ]
+      },
+      {
+        "data": "2026-08-21",
+        "farmacias": [
+          "neto"
+        ]
+      },
+      {
+        "data": "2026-08-22",
+        "farmacias": [
+          "moura_glicinias"
+        ]
+      },
+      {
+        "data": "2026-08-23",
+        "farmacias": [
+          "central"
+        ]
+      },
+      {
+        "data": "2026-08-24",
+        "farmacias": [
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-08-25",
+        "farmacias": [
+          "higiene"
+        ]
+      },
+      {
+        "data": "2026-08-26",
+        "farmacias": [
+          "aveirense"
+        ]
+      },
+      {
+        "data": "2026-08-27",
+        "farmacias": [
+          "avenida"
+        ]
+      },
+      {
+        "data": "2026-08-28",
+        "farmacias": [
+          "saude"
+        ]
+      },
+      {
+        "data": "2026-08-29",
+        "farmacias": [
+          "oudinot"
+        ]
+      },
+      {
+        "data": "2026-08-30",
+        "farmacias": [
+          "ala"
+        ]
+      },
+      {
+        "data": "2026-08-31",
+        "farmacias": [
+          "capao_filipe"
+        ]
+      },
+      {
+        "data": "2026-09-01",
+        "farmacias": [
+          "lemos"
+        ]
+      },
+      {
+        "data": "2026-09-02",
+        "farmacias": [
+          "peixinho"
+        ]
+      },
+      {
+        "data": "2026-09-03",
+        "farmacias": [
+          "nova"
+        ]
+      },
+      {
+        "data": "2026-09-04",
+        "farmacias": [
+          "alagoas"
+        ]
+      },
+      {
+        "data": "2026-09-05",
+        "farmacias": [
+          "neto"
+        ]
+      },
+      {
+        "data": "2026-09-06",
+        "farmacias": [
+          "moura_glicinias"
+        ]
+      },
+      {
+        "data": "2026-09-07",
+        "farmacias": [
+          "central"
+        ]
+      },
+      {
+        "data": "2026-09-08",
+        "farmacias": [
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-09-09",
+        "farmacias": [
+          "higiene"
+        ]
+      },
+      {
+        "data": "2026-09-10",
+        "farmacias": [
+          "aveirense"
+        ]
+      },
+      {
+        "data": "2026-09-11",
+        "farmacias": [
+          "avenida"
+        ]
+      },
+      {
+        "data": "2026-09-12",
+        "farmacias": [
+          "saude"
+        ]
+      },
+      {
+        "data": "2026-09-13",
+        "farmacias": [
+          "oudinot"
+        ]
+      },
+      {
+        "data": "2026-09-14",
+        "farmacias": [
+          "ala"
+        ]
+      },
+      {
+        "data": "2026-09-15",
+        "farmacias": [
+          "capao_filipe"
+        ]
+      },
+      {
+        "data": "2026-09-16",
+        "farmacias": [
+          "lemos"
+        ]
+      },
+      {
+        "data": "2026-09-17",
+        "farmacias": [
+          "peixinho"
+        ]
+      },
+      {
+        "data": "2026-09-18",
+        "farmacias": [
+          "nova"
+        ]
+      },
+      {
+        "data": "2026-09-19",
+        "farmacias": [
+          "alagoas"
+        ]
+      },
+      {
+        "data": "2026-09-20",
+        "farmacias": [
+          "neto"
+        ]
+      },
+      {
+        "data": "2026-09-21",
+        "farmacias": [
+          "moura_glicinias"
+        ]
+      },
+      {
+        "data": "2026-09-22",
+        "farmacias": [
+          "central"
+        ]
+      },
+      {
+        "data": "2026-09-23",
+        "farmacias": [
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-09-24",
+        "farmacias": [
+          "higiene"
+        ]
+      },
+      {
+        "data": "2026-09-25",
+        "farmacias": [
+          "aveirense"
+        ]
+      },
+      {
+        "data": "2026-09-26",
+        "farmacias": [
+          "avenida"
+        ]
+      },
+      {
+        "data": "2026-09-27",
+        "farmacias": [
+          "saude"
+        ]
+      },
+      {
+        "data": "2026-09-28",
+        "farmacias": [
+          "oudinot"
+        ]
+      },
+      {
+        "data": "2026-09-29",
+        "farmacias": [
+          "ala"
+        ]
+      },
+      {
+        "data": "2026-09-30",
+        "farmacias": [
+          "capao_filipe"
+        ]
+      },
+      {
+        "data": "2026-10-01",
+        "farmacias": [
+          "lemos"
+        ]
+      },
+      {
+        "data": "2026-10-02",
+        "farmacias": [
+          "peixinho"
+        ]
+      },
+      {
+        "data": "2026-10-03",
+        "farmacias": [
+          "nova"
+        ]
+      },
+      {
+        "data": "2026-10-04",
+        "farmacias": [
+          "alagoas"
+        ]
+      },
+      {
+        "data": "2026-10-05",
+        "farmacias": [
+          "neto"
+        ]
+      },
+      {
+        "data": "2026-10-06",
+        "farmacias": [
+          "moura_glicinias"
+        ]
+      },
+      {
+        "data": "2026-10-07",
+        "farmacias": [
+          "central"
+        ]
+      },
+      {
+        "data": "2026-10-08",
+        "farmacias": [
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-10-09",
+        "farmacias": [
+          "higiene"
+        ]
+      },
+      {
+        "data": "2026-10-10",
+        "farmacias": [
+          "aveirense"
+        ]
+      },
+      {
+        "data": "2026-10-11",
+        "farmacias": [
+          "avenida"
+        ]
+      },
+      {
+        "data": "2026-10-12",
+        "farmacias": [
+          "saude"
+        ]
+      },
+      {
+        "data": "2026-10-13",
+        "farmacias": [
+          "oudinot"
+        ]
+      },
+      {
+        "data": "2026-10-14",
+        "farmacias": [
+          "ala"
+        ]
+      },
+      {
+        "data": "2026-10-15",
+        "farmacias": [
+          "capao_filipe"
+        ]
+      },
+      {
+        "data": "2026-10-16",
+        "farmacias": [
+          "lemos"
+        ]
+      },
+      {
+        "data": "2026-10-17",
+        "farmacias": [
+          "peixinho"
+        ]
+      },
+      {
+        "data": "2026-10-18",
+        "farmacias": [
+          "nova"
+        ]
+      },
+      {
+        "data": "2026-10-19",
+        "farmacias": [
+          "alagoas"
+        ]
+      },
+      {
+        "data": "2026-10-20",
+        "farmacias": [
+          "neto"
+        ]
+      },
+      {
+        "data": "2026-10-21",
+        "farmacias": [
+          "moura_glicinias"
+        ]
+      },
+      {
+        "data": "2026-10-22",
+        "farmacias": [
+          "central"
+        ]
+      },
+      {
+        "data": "2026-10-23",
+        "farmacias": [
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-10-24",
+        "farmacias": [
+          "higiene"
+        ]
+      },
+      {
+        "data": "2026-10-25",
+        "farmacias": [
+          "aveirense"
+        ]
+      },
+      {
+        "data": "2026-10-26",
+        "farmacias": [
+          "avenida"
+        ]
+      },
+      {
+        "data": "2026-10-27",
+        "farmacias": [
+          "saude"
+        ]
+      },
+      {
+        "data": "2026-10-28",
+        "farmacias": [
+          "oudinot"
+        ]
+      },
+      {
+        "data": "2026-10-29",
+        "farmacias": [
+          "ala"
+        ]
+      },
+      {
+        "data": "2026-10-30",
+        "farmacias": [
+          "capao_filipe"
+        ]
+      },
+      {
+        "data": "2026-10-31",
+        "farmacias": [
+          "lemos"
+        ]
+      },
+      {
+        "data": "2026-11-01",
+        "farmacias": [
+          "peixinho"
+        ]
+      },
+      {
+        "data": "2026-11-02",
+        "farmacias": [
+          "nova"
+        ]
+      },
+      {
+        "data": "2026-11-03",
+        "farmacias": [
+          "alagoas"
+        ]
+      },
+      {
+        "data": "2026-11-04",
+        "farmacias": [
+          "neto"
+        ]
+      },
+      {
+        "data": "2026-11-05",
+        "farmacias": [
+          "moura_glicinias"
+        ]
+      },
+      {
+        "data": "2026-11-06",
+        "farmacias": [
+          "central"
+        ]
+      },
+      {
+        "data": "2026-11-07",
+        "farmacias": [
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-11-08",
+        "farmacias": [
+          "higiene"
+        ]
+      },
+      {
+        "data": "2026-11-09",
+        "farmacias": [
+          "aveirense"
+        ]
+      },
+      {
+        "data": "2026-11-10",
+        "farmacias": [
+          "avenida"
+        ]
+      },
+      {
+        "data": "2026-11-11",
+        "farmacias": [
+          "saude"
+        ]
+      },
+      {
+        "data": "2026-11-12",
+        "farmacias": [
+          "oudinot"
+        ]
+      },
+      {
+        "data": "2026-11-13",
+        "farmacias": [
+          "ala"
+        ]
+      },
+      {
+        "data": "2026-11-14",
+        "farmacias": [
+          "capao_filipe"
+        ]
+      },
+      {
+        "data": "2026-11-15",
+        "farmacias": [
+          "lemos"
+        ]
+      },
+      {
+        "data": "2026-11-16",
+        "farmacias": [
+          "peixinho"
+        ]
+      },
+      {
+        "data": "2026-11-17",
+        "farmacias": [
+          "nova"
+        ]
+      },
+      {
+        "data": "2026-11-18",
+        "farmacias": [
+          "alagoas"
+        ]
+      },
+      {
+        "data": "2026-11-19",
+        "farmacias": [
+          "neto"
+        ]
+      },
+      {
+        "data": "2026-11-20",
+        "farmacias": [
+          "moura_glicinias"
+        ]
+      },
+      {
+        "data": "2026-11-21",
+        "farmacias": [
+          "central"
+        ]
+      },
+      {
+        "data": "2026-11-22",
+        "farmacias": [
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-11-23",
+        "farmacias": [
+          "higiene"
+        ]
+      },
+      {
+        "data": "2026-11-24",
+        "farmacias": [
+          "aveirense"
+        ]
+      },
+      {
+        "data": "2026-11-25",
+        "farmacias": [
+          "avenida"
+        ]
+      },
+      {
+        "data": "2026-11-26",
+        "farmacias": [
+          "saude"
+        ]
+      },
+      {
+        "data": "2026-11-27",
+        "farmacias": [
+          "oudinot"
+        ]
+      },
+      {
+        "data": "2026-11-28",
+        "farmacias": [
+          "ala"
+        ]
+      },
+      {
+        "data": "2026-11-29",
+        "farmacias": [
+          "capao_filipe"
+        ]
+      },
+      {
+        "data": "2026-11-30",
+        "farmacias": [
+          "lemos"
+        ]
+      },
+      {
+        "data": "2026-12-01",
+        "farmacias": [
+          "peixinho"
+        ]
+      },
+      {
+        "data": "2026-12-02",
+        "farmacias": [
+          "nova"
+        ]
+      },
+      {
+        "data": "2026-12-03",
+        "farmacias": [
+          "alagoas"
+        ]
+      },
+      {
+        "data": "2026-12-04",
+        "farmacias": [
+          "neto"
+        ]
+      },
+      {
+        "data": "2026-12-05",
+        "farmacias": [
+          "moura_glicinias"
+        ]
+      },
+      {
+        "data": "2026-12-06",
+        "farmacias": [
+          "central"
+        ]
+      },
+      {
+        "data": "2026-12-07",
+        "farmacias": [
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-12-08",
+        "farmacias": [
+          "higiene"
+        ]
+      },
+      {
+        "data": "2026-12-09",
+        "farmacias": [
+          "aveirense"
+        ]
+      },
+      {
+        "data": "2026-12-10",
+        "farmacias": [
+          "avenida"
+        ]
+      },
+      {
+        "data": "2026-12-11",
+        "farmacias": [
+          "saude"
+        ]
+      },
+      {
+        "data": "2026-12-12",
+        "farmacias": [
+          "oudinot"
+        ]
+      },
+      {
+        "data": "2026-12-13",
+        "farmacias": [
+          "ala"
+        ]
+      },
+      {
+        "data": "2026-12-14",
+        "farmacias": [
+          "capao_filipe"
+        ]
+      },
+      {
+        "data": "2026-12-15",
+        "farmacias": [
+          "lemos"
+        ]
+      },
+      {
+        "data": "2026-12-16",
+        "farmacias": [
+          "peixinho"
+        ]
+      },
+      {
+        "data": "2026-12-17",
+        "farmacias": [
+          "nova"
+        ]
+      },
+      {
+        "data": "2026-12-18",
+        "farmacias": [
+          "alagoas"
+        ]
+      },
+      {
+        "data": "2026-12-19",
+        "farmacias": [
+          "neto"
+        ]
+      },
+      {
+        "data": "2026-12-20",
+        "farmacias": [
+          "moura_glicinias"
+        ]
+      },
+      {
+        "data": "2026-12-21",
+        "farmacias": [
+          "central"
+        ]
+      },
+      {
+        "data": "2026-12-22",
+        "farmacias": [
+          "moderna"
+        ]
+      },
+      {
+        "data": "2026-12-23",
+        "farmacias": [
+          "higiene"
+        ]
+      },
+      {
+        "data": "2026-12-24",
+        "farmacias": [
+          "aveirense"
+        ]
+      },
+      {
+        "data": "2026-12-25",
+        "farmacias": [
+          "avenida"
+        ]
+      },
+      {
+        "data": "2026-12-26",
+        "farmacias": [
+          "saude"
+        ]
+      },
+      {
+        "data": "2026-12-27",
+        "farmacias": [
+          "oudinot"
+        ]
+      },
+      {
+        "data": "2026-12-28",
+        "farmacias": [
+          "ala"
+        ]
+      },
+      {
+        "data": "2026-12-29",
+        "farmacias": [
+          "capao_filipe"
+        ]
+      },
+      {
+        "data": "2026-12-30",
+        "farmacias": [
+          "lemos"
+        ]
+      },
+      {
+        "data": "2026-12-31",
+        "farmacias": [
+          "peixinho"
+        ]
+      }
+    ]
+  }
+}

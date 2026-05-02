@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Farmácias de serviço dos concelhos de Ílhavo e Aveiro. Atualizado em tempo real.">
+<meta property="og:title" content="Farmácia de Serviço — Ílhavo e Aveiro">
+<meta property="og:description" content="Farmácias de serviço dos concelhos de Ílhavo e Aveiro. Atualizado em tempo real.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://farmaciaservicoconcelhosilhavoeaveiro.netlify.app/">
+<!-- Favicon: cruz verde de farmácia, SVG inline (sem ficheiro externo). -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='5' fill='%232e7d32'/%3E%3Crect x='5' y='13' width='22' height='6' fill='white'/%3E%3Crect x='13' y='5' width='6' height='22' fill='white'/%3E%3C/svg%3E">
+<title>Farmácia de Serviço</title>
+
+<!-- Analytics: GoatCounter (sem cookies, sem dados pessoais, RGPD-friendly). -->
+<script data-goatcounter="https://farmaciabrancogafanha.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+
+<style>
+body { font-family: Arial, sans-serif; margin: 0; background: #eef2f3; }
+
+.container {
+  display:flex;
+  flex-wrap:wrap;
+  gap:20px;
+  padding:20px;
+}
+
+.coluna-wrapper {
+  flex:1;
+  min-width:320px;
+  display:flex;
+  flex-direction:column;
+}
+
+.coluna {
+  background:white;
+  padding:20px;
+  border-radius:12px;
+  flex:1;
+}
+
+.cruz {
+  width:44px;height:44px;background:#2e7d32;position:relative;border-radius:6px;
+}
+.cruz::before,.cruz::after{content:"";position:absolute;background:white;}
+.cruz::before{width:70%;height:12px;top:50%;left:15%;transform:translateY(-50%);}
+.cruz::after{height:70%;width:12px;left:50%;top:15%;transform:translateX(-50%);}
+
+.titulo { display:flex; gap:12px; border-bottom:2px solid #2e7d32; margin-bottom:10px; }
+.titulo-principal { font-size:32px; font-weight:bold; }
+.subtitulo { font-size:24px; color:#555; }
+
+/* TEXTO UNIFORME */
+.texto, .sub-bloco, .sub-bloco small, .farmacia {
+  font-size:20px;
+  line-height:1.5;
+}
+
+.sub-bloco {
+  margin-bottom:15px;
+  padding-left:10px;
+  border-left:4px solid #2e7d32;
+  font-weight:bold;
+}
+
+.sub-bloco small {
+  display:block;
+  font-weight:bold;
+}
+
+mark {
+  background:#fff59d;
+  padding:0 4px;
+  border-radius:3px;
+  font-weight:bold;
+}
+
+.farmacia {
+  margin:12px 0;
+  padding:10px;
+  border-left:4px solid #2e7d32;
+  background:#f9fbf9;
+}
+
+.nome { font-weight:bold; }
+
+/* Botão de ação (mapa, ligar) — chip verde claro inline */
+.botao-acao {
+  display:inline-block;
+  background:#e8f5e9;
+  color:#2e7d32;
+  padding:2px 12px;
+  border-radius:20px;
+  text-decoration:none;
+  font-weight:bold;
+  margin-left:8px;
+  white-space:nowrap;
+  border:1px solid #2e7d32;
+}
+.botao-acao:hover {
+  background:#2e7d32;
+  color:white;
+}
+
+.footer {
+  margin:20px;
+  text-align:left;
+}
+
+.centro {
+  text-align:center;
+  margin-top:20px;
+}
+
+/* Grelha das frases "Concelho de X: Restam ..." alinhada pelos dois pontos */
+.grelha-restante {
+  display:inline-grid;
+  grid-template-columns:auto auto;
+  column-gap:8px;
+  text-align:left;
+}
+.grelha-restante .prefixo {
+  text-align:right;
+}
+.grelha-restante .conteudo {
+  text-align:left;
+}
+
+/* Relógio analógico de 24h */
+.relogio-wrapper {
+  display:flex;
+  justify-content:center;
+  margin:30px 0;
+}
+.relogio {
+  width:100%;
+  max-width:460px;
+  height:auto;
+}
+
+.footer-trio {
+  display:grid;
+  grid-template-columns:1fr auto 1fr;
+  align-items:center;
+  gap:30px;
+  max-width:1900px;
+  margin:10px auto 0;
+  padding:0;
+}
+.footer-esquerda { justify-self:start; }
+.footer-direita  { justify-self:end; }
+.footer-esquerda, .footer-direita {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:16px;
+  min-width:200px;
+  text-align:center;
+}
+.qr { text-align:center; }
+.qr img { width:160px; }
+.qr .scan-me, .qr .esta-aqui {
+  font-weight:bold;
+  margin-bottom:16px;
+}
+.qr .esta-aqui svg {
+  width:60px;
+  height:auto;
+  display:block;
+  margin:0 auto;
+}
+
+a { color:#1976d2; }
+
+/* =====================================================================
+   AVISO PORTRAIT — telemóvel/tablet em vertical não suportado
+   ===================================================================== */
+#aviso-portrait { display:none; }
+
+@media (orientation: portrait) {
+  body > .container,
+  body > .footer { display:none !important; }
+
+  #aviso-portrait {
+    display:flex;
+    position:fixed;
+    inset:0;
+    background:#eef2f3;
+    align-items:center;
+    justify-content:center;
+    padding:30px;
+    z-index:1000;
+  }
+  .aviso-conteudo {
+    text-align:center;
+    max-width:400px;
+  }
+  .aviso-icone {
+    font-size:90px;
+    margin-bottom:24px;
+    display:inline-block;
+    animation:rodar-aviso 2.4s ease-in-out infinite;
+  }
+  .aviso-texto {
+    font-size:22px;
+    font-weight:bold;
+    color:#2e7d32;
+    line-height:1.4;
+  }
+  @keyframes rodar-aviso {
+    0%, 40%, 100% { transform:rotate(0deg); }
+    60%, 90%      { transform:rotate(90deg); }
+  }
+}
+
+/* =====================================================================
+   RESPONSIVO — sem scroll em landscape; scroll permitido em portrait
+   ===================================================================== */
+
+/* --- Landscape: tablets, desktops, TVs --- */
+@media (orientation: landscape) and (min-height: 400px) {
+  body {
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  .container {
+    padding: 8px 12px;
+    gap: 12px;
+    flex-shrink: 0;
+  }
+  .coluna { padding: 10px 14px; }
+  .titulo-principal { font-size: 22px; }
+  .subtitulo { font-size: 16px; }
+  .cruz { width: 34px; height: 34px; }
+  .cruz::before { height: 10px; }
+  .cruz::after  { width: 10px; }
+  .texto, .sub-bloco, .sub-bloco small, .farmacia {
+    font-size: 13px;
+    line-height: 1.35;
+  }
+  .sub-bloco { margin-bottom: 6px; }
+  .farmacia  { padding: 5px 8px; margin: 5px 0; }
+  .footer    { margin: 0 12px 8px; }
+  .relogio   { max-width: 180px; }
+  .relogio-wrapper { margin: 6px 0; }
+  .footer-trio { gap: 16px; margin-top: 4px; }
+  .footer-esquerda, .footer-direita { min-width: 140px; gap: 8px; font-size: 11px; }
+  .qr img    { width: 80px; }
+  .qr .scan-me { font-size: 11px; }
+  .grelha-restante { font-size: 13px; }
+}
+
+/* --- Desktop médio: 1024–1279 px --- */
+@media (orientation: landscape) and (min-width: 1024px) and (max-width: 1279px) {
+  .titulo-principal { font-size: 24px; }
+  .subtitulo { font-size: 17px; }
+  .texto, .sub-bloco, .sub-bloco small, .farmacia { font-size: 14px; }
+  .relogio { max-width: 200px; }
+}
+
+/* --- Desktop grande: 1280–1799 px --- */
+@media (orientation: landscape) and (min-width: 1280px) and (max-width: 1799px) {
+  .titulo-principal { font-size: 26px; }
+  .subtitulo { font-size: 19px; }
+  .texto, .sub-bloco, .sub-bloco small, .farmacia { font-size: 16px; }
+  .relogio { max-width: 230px; }
+  .footer-esquerda, .footer-direita { font-size: 13px; gap: 12px; }
+  .qr img { width: 110px; }
+}
+
+/* --- TV: 1800 px+ --- */
+@media (orientation: landscape) and (min-width: 1800px) {
+  .titulo-principal { font-size: 30px; }
+  .subtitulo { font-size: 22px; }
+  .cruz { width: 42px; height: 42px; }
+  .texto, .sub-bloco, .sub-bloco small, .farmacia { font-size: 19px; }
+  .container { padding: 12px 18px; gap: 16px; }
+  .coluna { padding: 14px 18px; }
+  .farmacia { padding: 8px 10px; margin: 8px 0; }
+  .relogio { max-width: 270px; }
+  .footer-esquerda, .footer-direita { font-size: 15px; gap: 14px; min-width: 220px; }
+  .qr img { width: 130px; }
+  .grelha-restante { font-size: 16px; }
+}
+</style>
+</head>
+
+<body>
+
+<!-- Aviso para telemóvel/tablet em vertical: pedir para rodar o dispositivo. -->
+<div id="aviso-portrait">
+  <div class="aviso-conteudo">
+    <div class="aviso-icone">📱</div>
+    <div class="aviso-texto">Por favor, rode o dispositivo para a horizontal</div>
+  </div>
+</div>
+
+<div class="container">
+
+<!-- ILHAVO -->
+<div class="coluna-wrapper">
+  <div class="coluna">
+    <div class="titulo">
+      <div class="cruz"></div>
+      <div>
+        <div class="titulo-principal">Farmácia de Serviço</div>
+        <div class="subtitulo">Concelho de Ílhavo</div>
+      </div>
+    </div>
+
+    <div id="disponibilidade" class="sub-bloco"></div>
+
+    <div id="ilhavo" class="texto">A carregar...</div>
+  </div>
+</div>
+
+<!-- AVEIRO -->
+<div class="coluna-wrapper">
+  <div class="coluna">
+    <div class="titulo">
+      <div class="cruz"></div>
+      <div>
+        <div class="titulo-principal">Farmácia de Serviço</div>
+        <div class="subtitulo">Concelho de Aveiro</div>
+      </div>
+    </div>
+
+    <div id="periodo" class="sub-bloco"></div>
+
+    <div id="aveiro" class="texto">A carregar...</div>
+  </div>
+</div>
+
+</div>
+
+<div class="footer texto">
+
+  <div class="centro">
+    <div id="update"></div>
+    <div class="grelha-restante" id="grelha-restante"></div>
+  </div>
+
+  <!-- Footer trio: Linktree | Relógio | Site + QR -->
+  <div class="footer-trio">
+
+  <div class="footer-esquerda">
+    <div class="qr">
+      <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://linktr.ee/farmaciabrancogafanha" alt="QR code para abrir o Linktree da Farmácia Branco">
+    </div>
+    <a href="https://linktr.ee/farmaciabrancogafanha" target="_blank">
+      https://linktr.ee/farmaciabrancogafanha
+    </a>
+  </div>
+
+  <!-- Relógio analógico militar (24h) -->
+  <div class="relogio-wrapper">
+    <svg class="relogio" viewBox="-10 -20 250 250" xmlns="http://www.w3.org/2000/svg">
+      <!-- Bezel preto (3px de espessura: r=95 a r=98) -->
+      <circle cx="100" cy="100" r="98" fill="black"/>
+      <!-- Mostrador branco -->
+      <circle cx="100" cy="100" r="95" fill="white"/>
+
+      <!-- Anel exterior: turno completo (24h). Decorrido cinzento + falta (cor dinâmica). -->
+      <path id="setor-decorrido" fill="#9e9e9e" fill-rule="evenodd"/>
+      <path id="setor-falta"     fill="#2e7d32" fill-rule="evenodd"/>
+
+      <!-- Anel interior: disponibilidade (das 9h às 21h). Decorrido cinzento + falta (cor dinâmica). -->
+      <path id="setor-disponibilidade-decorrido" fill="#9e9e9e"/>
+      <path id="setor-disponibilidade"           fill="#ff9800"/>
+
+      <!-- Marcações dinâmicas (números, ticks) — preenchido por JS no init -->
+      <g id="relogio-marcacoes"></g>
+
+      <!-- Display digital (texto a vermelho LED, estilo alarm clock) -->
+      <rect x="68" y="110" width="64" height="22" rx="3" fill="#222"/>
+      <text id="display-digital" x="100" y="121"
+            text-anchor="middle" dominant-baseline="central"
+            font-family="Consolas, 'Courier New', monospace"
+            font-size="11" font-weight="bold" fill="#ff2a2a">--:--:--</text>
+
+      <!-- Ponteiro das horas (mais fino) -->
+      <line id="ponteiro-hora" x1="100" y1="100" x2="100" y2="40"
+            stroke="black" stroke-width="4" stroke-linecap="round"/>
+
+      <!-- Eixo central -->
+      <circle cx="100" cy="100" r="4" fill="black"/>
+
+      <!-- Data do próximo turno (aparece entre as 19h45 e as 9h, junto ao 9 e
+           acima do 24). Visualmente igual aos <mark> do cabeçalho: fundo
+           amarelo, texto preto bold. -->
+      <g id="grupo-data-prox" style="display:none;">
+        <rect x="191" y="163" width="58" height="14" rx="3" fill="#fff59d"/>
+        <text id="data-proximo-turno" x="195" y="170"
+              text-anchor="start" dominant-baseline="central"
+              font-family="Arial, sans-serif"
+              font-size="8" font-weight="bold" fill="black"></text>
+        <rect x="71" y="-15" width="58" height="14" rx="3" fill="#fff59d"/>
+        <text id="data-proximo-turno-topo" x="100" y="-8"
+              text-anchor="middle" dominant-baseline="central"
+              font-family="Arial, sans-serif"
+              font-size="8" font-weight="bold" fill="black"></text>
+      </g>
+
+      <!-- Data civil debaixo do display digital. SEMPRE visível: mostra o
+           dia do calendário corrente. O fundo amarelo aparece só entre 0h
+           e 9h — sinal de "atenção, dia novo no calendário, mas o turno
+           ainda é o de ontem". -->
+      <g id="grupo-data-civil">
+        <rect id="data-civil-fundo" x="71" y="140" width="58" height="14" rx="3" fill="#fff59d" style="display:none;"/>
+        <text id="data-civil" x="100" y="147"
+              text-anchor="middle" dominant-baseline="central"
+              font-family="Arial, sans-serif"
+              font-size="8" font-weight="bold" fill="black"></text>
+      </g>
+    </svg>
+  </div>
+
+  <div class="footer-direita">
+    <div class="qr">
+      <div class="esta-aqui" aria-label="Está aqui">
+        <svg viewBox="0 0 100 120" xmlns="http://www.w3.org/2000/svg" role="img">
+          <circle cx="50" cy="50" r="45" fill="#d32f2f"/>
+          <polygon points="35,90 65,90 50,115" fill="#d32f2f"/>
+          <text x="50" y="40" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-weight="bold" font-size="16">YOU</text>
+          <text x="50" y="58" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-weight="bold" font-size="16">ARE</text>
+          <text x="50" y="76" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-weight="bold" font-size="16">HERE</text>
+        </svg>
+      </div>
+      <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://farmaciaservicoconcelhosilhavoeaveiro.netlify.app/" alt="QR code para abrir o site das farmácias de serviço">
+    </div>
+    <a href="https://farmaciaservicoconcelhosilhavoeaveiro.netlify.app/" target="_blank">
+      https://farmaciaservicoconcelhosilhavoeaveiro.netlify.app/
+    </a>
+  </div>
+
+  </div><!-- fim footer-trio -->
+
+</div>
+
+<script>
+
+// =====================================================================
+// HORA EM LISBOA — Europe/Lisbon, sempre, sem drift de UTC
+// =====================================================================
+
+// Devolve componentes de data/hora em Lisboa para um dado instante.
+function partesLisboa(date = new Date()) {
+  const fmt = new Intl.DateTimeFormat("en-GB", {
+    timeZone: "Europe/Lisbon",
+    year: "numeric", month: "2-digit", day: "2-digit",
+    hour: "2-digit", minute: "2-digit", second: "2-digit",
+    hour12: false
+  });
+  const o = {};
+  for (const p of fmt.formatToParts(date)) {
+    if (p.type !== "literal") o[p.type] = p.value;
+  }
+  return {
+    ano: parseInt(o.year, 10),
+    mes: parseInt(o.month, 10),
+    dia: parseInt(o.day, 10),
+    h:   parseInt(o.hour === "24" ? "0" : o.hour, 10),
+    m:   parseInt(o.minute, 10),
+    s:   parseInt(o.second, 10),
+  };
+}
+
+function isoLisboa(p) {
+  return `${p.ano}-${String(p.mes).padStart(2,"0")}-${String(p.dia).padStart(2,"0")}`;
+}
+
+// Soma N dias a uma data ISO YYYY-MM-DD.
+// UTC é só para aritmética de calendário; sem horas envolvidas.
+function adicionarDias(iso, dias) {
+  const [y, mo, d] = iso.split("-").map(Number);
+  const dt = new Date(Date.UTC(y, mo - 1, d));
+  dt.setUTCDate(dt.getUTCDate() + dias);
+  const yy = dt.getUTCFullYear();
+  const mm = String(dt.getUTCMonth() + 1).padStart(2, "0");
+  const dd = String(dt.getUTCDate()).padStart(2, "0");
+  return `${yy}-${mm}-${dd}`;
+}
+
+// =====================================================================
+// LÓGICA DE TURNO (mudança às 09:00 Lisboa)
+// =====================================================================
+
+function obterDataServico(p = partesLisboa()) {
+  const iso = isoLisboa(p);
+  return p.h < 9 ? adicionarDias(iso, -1) : iso;
+}
+
+// Cores partilhadas
+const COR_TURNO       = "#2e7d32"; // verde institucional
+const COR_DISP        = "#ff9800"; // laranja disponibilidade
+const COR_ALERTA      = "#d32f2f"; // vermelho material (texto e anéis)
+
+// =====================================================================
+// REFERÊNCIAS DOM CACHEADAS
+// =====================================================================
+// Buscamos cada elemento UMA vez no init. Todas as funções acedem via
+// dom.X em vez de chamarem document.getElementById a cada tick.
+const dom = {
+  // Colunas das farmácias
+  ilhavo:               document.getElementById("ilhavo"),
+  aveiro:               document.getElementById("aveiro"),
+  disponibilidade:      document.getElementById("disponibilidade"),
+  periodo:              document.getElementById("periodo"),
+  // Footer central
+  update:               document.getElementById("update"),
+  grelhaRestante:       document.getElementById("grelha-restante"),
+  // Relógio: anéis
+  setorDecorrido:       document.getElementById("setor-decorrido"),
+  setorFalta:           document.getElementById("setor-falta"),
+  setorDispDecorrido:   document.getElementById("setor-disponibilidade-decorrido"),
+  setorDisp:            document.getElementById("setor-disponibilidade"),
+  // Relógio: ponteiro e display digital
+  ponteiroHora:         document.getElementById("ponteiro-hora"),
+  displayDigital:       document.getElementById("display-digital"),
+  // Relógio: datas (3 sítios)
+  dataCivil:            document.getElementById("data-civil"),
+  dataCivilFundo:       document.getElementById("data-civil-fundo"),
+  grupoDataProx:        document.getElementById("grupo-data-prox"),
+  dataProximoTurno:     document.getElementById("data-proximo-turno"),
+  dataProximoTurnoTopo: document.getElementById("data-proximo-turno-topo"),
+};
+
+// =====================================================================
+// DADOS
+// =====================================================================
+
+async function carregarDados() {
+  try {
+    const res = await fetch("farmacias.json");
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    return await res.json();
+  } catch (err) {
+    console.error("Erro ao carregar farmacias.json:", err);
+    const msg = "Erro a carregar dados. Verifique a ligação à internet ou tente recarregar a página.";
+    dom.ilhavo.textContent = msg;
+    dom.aveiro.textContent = msg;
+    return null;
+  }
+}
+
+function getSlugs(data, calendario) {
+  return calendario.find(d => d.data === data)?.farmacias || [];
+}
+
+// =====================================================================
+// RENDER
+// =====================================================================
+
+function render(slugs, catalogo, containerId) {
+  const el = dom[containerId];
+
+  if (!slugs.length) {
+    el.innerHTML = "Sem dados disponíveis.";
+    return;
+  }
+
+  el.innerHTML = slugs.map(slug => {
+    const f = catalogo[slug];
+    if (!f) {
+      return `<div class="farmacia">Farmácia desconhecida (${slug})</div>`;
+    }
+
+    // Botão "Ver no mapa" inline com o nome da farmácia (se houver link).
+    const linkMapa = f.maps
+      ? `<a class="botao-acao" href="${f.maps}" target="_blank" rel="noopener noreferrer" aria-label="Ver localização da Farmácia ${f.nome} no Google Maps">📍 Ver no mapa</a>`
+      : "";
+
+    // Uma linha por cada telefone, com botão "Ligar".
+    // Em Ílhavo (Disponibilidade) o botão dos números fixos esconde-se fora
+    // do horário 9h–21h15. Os móveis (+351 9xx) mantêm-se sempre visíveis.
+    const ehIlhavo = (containerId === "ilhavo");
+    const telefonesLinhas = (f.telefones || []).map(tel => {
+      const numeroLimpo = tel.replace(/\s/g, "");
+      const eMovel = numeroLimpo.startsWith("+3519");
+      const classeCondicional = (ehIlhavo && !eMovel) ? " ligar-condicional" : "";
+      return `<div>${tel}<a class="botao-acao${classeCondicional}" href="tel:${numeroLimpo}" aria-label="Ligar para ${tel}">📞 Ligar</a></div>`;
+    }).join("");
+
+    return `
+      <div class="farmacia">
+        <div class="nome">Farmácia ${f.nome}${linkMapa}</div>
+        <div>${f.morada}</div>
+        ${telefonesLinhas}
+      </div>
+    `;
+  }).join("");
+}
+
+function renderDisponibilidade(p, dataServico) {
+  // Antes das 21h (e depois das 9h) → ainda vai fechar.
+  // Entre as 21h e as 9h do dia seguinte → já fechou.
+  const fechado = !(p.h >= 9 && p.h < 21);
+  const verbo = fechado ? "Fechou" : "Fecho";
+  // Realces para manter identidade visual com o relógio:
+  // - Última hora antes do fecho (20:00–20:59): fundo vermelho de alerta.
+  // - Após o fecho (já fechou): fundo cinzento, igual ao setor decorrido do relógio.
+  let realce;
+  if (p.h === 20) {
+    realce = `<span style="background:${COR_ALERTA};color:#fff;padding:2px 6px;border-radius:3px;">${verbo} às 21h</span>`;
+  } else if (fechado) {
+    realce = `<span style="background:#9e9e9e;color:#fff;padding:2px 6px;border-radius:3px;">${verbo} às 21h</span>`;
+  } else {
+    realce = `${verbo} às 21h`;
+  }
+  const novo = `<small>Regime de Disponibilidade<br>${realce} de ${dataServico}</small>`;
+  if (novo !== ultimoDisponibilidade) {
+    dom.disponibilidade.innerHTML = novo;
+    ultimoDisponibilidade = novo;
+  }
+}
+
+function renderPeriodo(dataServico) {
+  const fim = adicionarDias(dataServico, 1);
+  const novo = `<small>Regime de Permanência<br>Desde as 9h de ${dataServico} até às 9h de <mark>${fim}</mark></small>`;
+  if (novo !== ultimoPeriodo) {
+    dom.periodo.innerHTML = novo;
+    ultimoPeriodo = novo;
+  }
+}
+
+function formatHora(p) {
+  return `${String(p.h).padStart(2,"0")}h${String(p.m).padStart(2,"0")}min`;
+}
+
+// Devolve o tempo restante no formato "01h45min" (sempre com horas e minutos).
+function formatarTempoRestante(minutos) {
+  const hh = String(Math.floor(minutos / 60)).padStart(2, "0");
+  const mm = String(minutos % 60).padStart(2, "0");
+  return `${hh}h${mm}min`;
+}
+
+function atualizarDatas(p) {
+  const novoUpdate = `Atualizada às <b>${formatHora(p)}</b> do dia <b>${isoLisboa(p)}</b>`;
+  if (novoUpdate !== ultimoUpdate) {
+    dom.update.innerHTML = novoUpdate;
+    ultimoUpdate = novoUpdate;
+  }
+
+  // Minutos até às próximas 09:00 em Lisboa.
+  const agoraEmMin = p.h * 60 + p.m;
+  const alvoTurno = 9 * 60;
+  const restantesTurno = (agoraEmMin < alvoTurno)
+    ? alvoTurno - agoraEmMin
+    : 24 * 60 - agoraEmMin + alvoTurno;
+  // Última hora antes da mudança de turno (08:00–08:59) → vermelho de alerta.
+  const corRestanteTurno = (p.h === 8) ? COR_ALERTA : COR_TURNO;
+
+  // Constrói a grelha de duas colunas alinhada pelos ":". Linha do Ílhavo
+  // só aparece entre as 9h e as 21h; a do Aveiro está sempre presente.
+  const linhas = [];
+
+  if (p.h >= 9 && p.h < 21) {
+    const restantesDisp = 21 * 60 - agoraEmMin;
+    const palavra = numFarmaciasIlhavo === 1 ? "da farmácia" : "das farmácias";
+    // Última hora antes do fecho (20:00–20:59) → vermelho de alerta.
+    const corRestanteDisp = (p.h === 20) ? COR_ALERTA : COR_DISP;
+    linhas.push(`<div class="prefixo">Concelho de Ílhavo:</div>`);
+    linhas.push(`<div class="conteudo"><b style="color:${corRestanteDisp};">Restam ${formatarTempoRestante(restantesDisp)}</b> até ao fecho ${palavra} em turno do <b>Regime de Disponibilidade</b>.</div>`);
+  }
+
+  linhas.push(`<div class="prefixo">Concelho de Aveiro:</div>`);
+  linhas.push(`<div class="conteudo"><b style="color:${corRestanteTurno};">Restam ${formatarTempoRestante(restantesTurno)}</b> até à mudança de turno do <b>Regime de Permanência</b>.</div>`);
+
+  const novaGrelha = linhas.join("");
+  if (novaGrelha !== ultimoGrelhaRestante) {
+    dom.grelhaRestante.innerHTML = novaGrelha;
+    ultimoGrelhaRestante = novaGrelha;
+  }
+}
+
+// Esconde o botão "Ligar" dos telefones fixos das farmácias de Ílhavo fora
+// do horário 9h–21h15 (15 minutos de tolerância depois do fecho). Os botões
+// dos telemóveis (Branco) mantêm-se sempre visíveis.
+function atualizarVisibilidadeLigar(p) {
+  const minutosDoDia = p.h * 60 + p.m;
+  const dentroDoHorario = (minutosDoDia >= 9 * 60) && (minutosDoDia < 21 * 60 + 15);
+
+  document.querySelectorAll(".ligar-condicional").forEach(el => {
+    el.style.display = dentroDoHorario ? "" : "none";
+  });
+}
+
+// =====================================================================
+// RELÓGIO ANALÓGICO MILITAR (24h)
+// =====================================================================
+
+const SVG_NS = "http://www.w3.org/2000/svg";
+
+// Gera as marcações estáticas do mostrador (chamado uma vez no init).
+function gerarMarcacoesRelogio() {
+  const grupo = document.getElementById("relogio-marcacoes");
+  const cx = 100, cy = 100;
+
+  // Números das horas 1-24 (24 fica no topo). Pretos.
+  // Múltiplos de 3 (3, 6, 9, 12, 15, 18, 21, 24) → maiores e a negrito.
+  for (let h = 1; h <= 24; h++) {
+    const ang = (h * 15 - 90) * Math.PI / 180;
+    const r = 80;
+    const destacado = (h % 3 === 0);
+    const t = document.createElementNS(SVG_NS, "text");
+    t.setAttribute("x", cx + r * Math.cos(ang));
+    t.setAttribute("y", cy + r * Math.sin(ang));
+    t.setAttribute("text-anchor", "middle");
+    t.setAttribute("dominant-baseline", "central");
+    t.setAttribute("font-family", "Arial, sans-serif");
+    t.setAttribute("font-size", destacado ? "13" : "10");
+    t.setAttribute("font-weight", destacado ? "bold" : "normal");
+    t.setAttribute("fill", "black");
+    t.textContent = h;
+    grupo.appendChild(t);
+  }
+
+  // Ticks das meias-horas (24). Ficam exactamente entre dois ticks de hora.
+  for (let h = 0; h < 24; h++) {
+    const ang = ((h + 0.5) * 15 - 90) * Math.PI / 180;
+    const line = document.createElementNS(SVG_NS, "line");
+    line.setAttribute("x1", cx + 68 * Math.cos(ang));
+    line.setAttribute("y1", cy + 68 * Math.sin(ang));
+    line.setAttribute("x2", cx + 64 * Math.cos(ang));
+    line.setAttribute("y2", cy + 64 * Math.sin(ang));
+    line.setAttribute("stroke", "#999");
+    line.setAttribute("stroke-width", "0.4");
+    grupo.appendChild(line);
+  }
+
+  // Ticks das horas (24). Mais grossos.
+  for (let h = 1; h <= 24; h++) {
+    const ang = (h * 15 - 90) * Math.PI / 180;
+    const line = document.createElementNS(SVG_NS, "line");
+    line.setAttribute("x1", cx + 68 * Math.cos(ang));
+    line.setAttribute("y1", cy + 68 * Math.sin(ang));
+    line.setAttribute("x2", cx + 64 * Math.cos(ang));
+    line.setAttribute("y2", cy + 64 * Math.sin(ang));
+    line.setAttribute("stroke", "#333");
+    line.setAttribute("stroke-width", "1.2");
+    grupo.appendChild(line);
+  }
+}
+
+// =====================================================================
+// ANÉIS DE PROGRESSO (turno + disponibilidade)
+// =====================================================================
+
+// Ponto no círculo: ângulo em graus, 0° = topo, sentido horário.
+function pontoNoCirculo(cx, cy, r, angGraus) {
+  const rad = (angGraus - 90) * Math.PI / 180;
+  return [cx + r * Math.cos(rad), cy + r * Math.sin(rad)];
+}
+
+// Caminho SVG para um setor de anel (entre dois raios e dois ângulos).
+function pathSetorAnel(cx, cy, rInt, rExt, angInicio, angFim) {
+  const delta = angFim - angInicio;
+  if (delta <= 0.001) return ""; // setor vazio
+  const largeArc = delta > 180 ? 1 : 0;
+  const [x1, y1] = pontoNoCirculo(cx, cy, rExt, angInicio);
+  const [x2, y2] = pontoNoCirculo(cx, cy, rExt, angFim);
+  const [x3, y3] = pontoNoCirculo(cx, cy, rInt, angFim);
+  const [x4, y4] = pontoNoCirculo(cx, cy, rInt, angInicio);
+  return [
+    `M ${x1} ${y1}`,
+    `A ${rExt} ${rExt} 0 ${largeArc} 1 ${x2} ${y2}`,
+    `L ${x3} ${y3}`,
+    `A ${rInt} ${rInt} 0 ${largeArc} 0 ${x4} ${y4}`,
+    'Z'
+  ].join(' ');
+}
+
+// Caminho SVG para o anel completo (donut). Usa fill-rule evenodd no <path>.
+function pathAnelCompleto(cx, cy, rInt, rExt) {
+  return [
+    `M ${cx - rExt} ${cy}`,
+    `A ${rExt} ${rExt} 0 1 0 ${cx + rExt} ${cy}`,
+    `A ${rExt} ${rExt} 0 1 0 ${cx - rExt} ${cy}`,
+    `M ${cx - rInt} ${cy}`,
+    `A ${rInt} ${rInt} 0 1 0 ${cx + rInt} ${cy}`,
+    `A ${rInt} ${rInt} 0 1 0 ${cx - rInt} ${cy}`,
+    'Z'
+  ].join(' ');
+}
+
+// Anel exterior: turno completo (24h). 5px de espessura.
+const R_INT_TURNO = 90, R_EXT_TURNO = 94;
+// Anel interior: disponibilidade (das 9h às 21h). 5px de espessura.
+const R_INT_DISP  = 84, R_EXT_DISP  = 89;
+
+const ANG_INICIO_TURNO = 9 * 15;  // 135°
+const ANG_FIM_DISP     = 21 * 15; // 315°
+
+function atualizarAnelTurno(p) {
+  const angHoraActual = (p.h + p.m / 60 + p.s / 3600) * 15;
+
+  let delta = angHoraActual - ANG_INICIO_TURNO;
+  if (delta < 0) delta += 360;
+
+  const elDecorrido = dom.setorDecorrido;
+  const elFalta     = dom.setorFalta;
+
+  // Última hora antes da mudança de turno (08:00–08:59) → vermelho de alerta.
+  const corFalta = (p.h === 8) ? COR_ALERTA : COR_TURNO;
+  elFalta.setAttribute("fill", corFalta);
+
+  if (delta < 0.01) {
+    elDecorrido.setAttribute("d", "");
+    elFalta.setAttribute("d", pathAnelCompleto(100, 100, R_INT_TURNO, R_EXT_TURNO));
+  } else if (delta > 359.99) {
+    elDecorrido.setAttribute("d", pathAnelCompleto(100, 100, R_INT_TURNO, R_EXT_TURNO));
+    elFalta.setAttribute("d", "");
+  } else {
+    elDecorrido.setAttribute("d",
+      pathSetorAnel(100, 100, R_INT_TURNO, R_EXT_TURNO, ANG_INICIO_TURNO, ANG_INICIO_TURNO + delta));
+    elFalta.setAttribute("d",
+      pathSetorAnel(100, 100, R_INT_TURNO, R_EXT_TURNO, ANG_INICIO_TURNO + delta, ANG_INICIO_TURNO + 360));
+  }
+}
+
+function atualizarAnelDisponibilidade(p) {
+  const elDecorrido = dom.setorDispDecorrido;
+  const elFalta     = dom.setorDisp;
+
+  // Só visível entre as 9h e as 21h. Fora deste intervalo, ambos invisíveis.
+  if (p.h < 9 || p.h >= 21) {
+    elDecorrido.setAttribute("d", "");
+    elFalta.setAttribute("d", "");
+    return;
+  }
+
+  // Última hora antes do fecho (20:00–20:59) → vermelho de alerta.
+  const corFalta = (p.h === 20) ? COR_ALERTA : COR_DISP;
+  elFalta.setAttribute("fill", corFalta);
+
+  // Setor decorrido: das 9h até à hora actual (cinzento).
+  // Setor falta: da hora actual até às 21h (laranja ou vermelho).
+  const angHoraActual = (p.h + p.m / 60 + p.s / 3600) * 15;
+  elDecorrido.setAttribute("d",
+    pathSetorAnel(100, 100, R_INT_DISP, R_EXT_DISP, ANG_INICIO_TURNO, angHoraActual));
+  elFalta.setAttribute("d",
+    pathSetorAnel(100, 100, R_INT_DISP, R_EXT_DISP, angHoraActual, ANG_FIM_DISP));
+}
+
+// Atualiza ponteiro, display digital e ambos os anéis (1x por segundo).
+function atualizarRelogio(p = partesLisboa()) {
+  // Ponteiro das horas: rotação completa em 24h, suavizada com minutos+segundos.
+  const angHora = (p.h + p.m / 60 + p.s / 3600) * 15;
+  dom.ponteiroHora.setAttribute(
+    "transform", `rotate(${angHora} 100 100)`
+  );
+
+  // Display digital hh:mm:ss.
+  const hh = String(p.h).padStart(2, "0");
+  const mm = String(p.m).padStart(2, "0");
+  const ss = String(p.s).padStart(2, "0");
+  dom.displayDigital.textContent = `${hh}:${mm}:${ss}`;
+
+  atualizarAnelTurno(p);
+  atualizarAnelDisponibilidade(p);
+  atualizarDataProximoTurno(p);
+}
+
+// Mostra a data do próximo "9h da manhã" em três sítios do relógio:
+//   - junto ao 9 e acima do 24: data do PRÓXIMO TURNO, visível das 19h45
+//     até às 9h00
+//   - debaixo do display digital: DATA CIVIL (dia do calendário corrente),
+//     sempre visível; o fundo amarelo aparece só entre 0h e 9h (período
+//     em que o calendário civil já avançou mas o turno ainda é o de ontem)
+function atualizarDataProximoTurno(p) {
+  const minutosDoDia = p.h * 60 + p.m;
+  const inicio = 19 * 60 + 45; // 19h45
+  const fim    = 9 * 60;       // 9h00
+
+  const isoHoje = isoLisboa(p);
+
+  // Data civil debaixo do display: sempre visível; fundo amarelo só 0h-9h.
+  dom.dataCivil.textContent = isoHoje;
+  dom.dataCivilFundo.style.display =
+    (minutosDoDia < fim) ? "" : "none";
+
+  // Data do próximo turno (acima do 24 e junto ao 9): visível 19h45-9h.
+  const grupoExt = dom.grupoDataProx;
+  const mostrarExt = (minutosDoDia >= inicio) || (minutosDoDia < fim);
+
+  if (!mostrarExt) {
+    grupoExt.style.display = "none";
+    return;
+  }
+
+  // Próxima 9h: amanhã se já passámos das 19h45, hoje se ainda não chegámos às 9h.
+  const dataProxima = (minutosDoDia >= inicio)
+    ? adicionarDias(isoHoje, 1)
+    : isoHoje;
+
+  dom.dataProximoTurno.textContent = dataProxima;
+  dom.dataProximoTurnoTopo.textContent = dataProxima;
+  grupoExt.style.display = "";
+}
+
+// =====================================================================
+// CICLO PRINCIPAL
+// =====================================================================
+
+let dataServicoAnterior = null;
+let numFarmaciasIlhavo = 0;
+
+// Cache do último HTML escrito em cada elemento, para evitar re-render quando
+// o conteúdo não muda. As funções abaixo só tocam no DOM se o HTML novo for
+// diferente do anterior. Reduz reflows de ~120/min para ~2/min.
+let ultimoUpdate = "";
+let ultimoGrelhaRestante = "";
+let ultimoDisponibilidade = "";
+let ultimoPeriodo = "";
+
+function tick(dados, p = partesLisboa()) {
+  const dataServico = obterDataServico(p);
+
+  // Re-renderiza farmácias só quando muda o dia de turno (evita piscar).
+  if (dataServico !== dataServicoAnterior) {
+    const slugsIlhavo = getSlugs(dataServico, dados.calendario.ilhavo);
+    numFarmaciasIlhavo = slugsIlhavo.length;
+    render(slugsIlhavo, dados.farmacias.ilhavo, "ilhavo");
+    render(getSlugs(dataServico, dados.calendario.aveiro), dados.farmacias.aveiro, "aveiro");
+    dataServicoAnterior = dataServico;
+  }
+
+  renderDisponibilidade(p, dataServico);
+  renderPeriodo(dataServico);
+  atualizarDatas(p);
+  atualizarVisibilidadeLigar(p);
+}
+
+(async () => {
+  gerarMarcacoesRelogio();
+  atualizarRelogio();
+
+  const dados = await carregarDados();
+  if (!dados) {
+    // Falha no fetch — mantém o relógio a funcionar sem dados.
+    setInterval(atualizarRelogio, 1000);
+    return;
+  }
+  tick(dados);
+
+  // Cada tick: 1 chamada a partesLisboa() partilhada entre tick e relógio
+  // (garante coerência temporal: todos os componentes vêem o mesmo instante).
+  setInterval(() => {
+    const p = partesLisboa();
+    tick(dados, p);
+    atualizarRelogio(p);
+  }, 1000);
+})();
+
+</script>
+
+</body>
+</html>
