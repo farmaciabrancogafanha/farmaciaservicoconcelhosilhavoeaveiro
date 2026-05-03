@@ -640,7 +640,12 @@ function formatarTempoRestante(minutos) {
 }
 
 function atualizarDatas(p) {
-  const novoUpdate = `Atualizada às <b>${formatHora(p)}</b> do dia <b>${isoLisboa(p)}</b>`;
+  // Entre 0h e 9h, a data civil é destacada com fundo amarelo (mesma regra
+  // das outras datas amarelas: calendário já avançou mas turno é o de ontem).
+  const dataFormatada = (p.h < 9)
+    ? `<mark>${isoLisboa(p)}</mark>`
+    : `<b>${isoLisboa(p)}</b>`;
+  const novoUpdate = `Atualizada às <b>${formatHora(p)}</b> do dia ${dataFormatada}`;
   if (novoUpdate !== ultimoUpdate) {
     dom.update.innerHTML = novoUpdate;
     ultimoUpdate = novoUpdate;
