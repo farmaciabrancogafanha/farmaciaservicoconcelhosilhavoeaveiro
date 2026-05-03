@@ -10,7 +10,7 @@
 <meta property="og:url" content="https://farmaciaservicoconcelhosilhavoeaveiro.netlify.app/">
 <!-- Favicon: cruz verde de farmácia, SVG inline (sem ficheiro externo). -->
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='5' fill='%232e7d32'/%3E%3Crect x='5' y='13' width='22' height='6' fill='white'/%3E%3Crect x='13' y='5' width='6' height='22' fill='white'/%3E%3C/svg%3E">
-<title>Farmácia de Serviço</title>
+<title>Farmácia de Serviço — Ílhavo e Aveiro</title>
 
 <!-- Analytics: GoatCounter (sem cookies, sem dados pessoais, RGPD-friendly). -->
 <script data-goatcounter="https://farmaciabrancogafanha.goatcounter.com/count"
@@ -351,7 +351,7 @@ a { color:#1976d2; }
     <div class="qr">
       <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://linktr.ee/farmaciabrancogafanha" alt="QR code para abrir o Linktree da Farmácia Branco">
     </div>
-    <a href="https://linktr.ee/farmaciabrancogafanha" target="_blank">
+    <a href="https://linktr.ee/farmaciabrancogafanha" target="_blank" rel="noopener noreferrer">
       https://linktr.ee/farmaciabrancogafanha
     </a>
   </div>
@@ -365,11 +365,11 @@ a { color:#1976d2; }
       <circle cx="100" cy="100" r="95" fill="white"/>
 
       <!-- Anel exterior: turno completo (24h). Decorrido cinzento + falta (cor dinâmica). -->
-      <path id="setor-decorrido" fill="#9e9e9e" fill-rule="evenodd"/>
+      <path id="setor-decorrido" fill-rule="evenodd"/>
       <path id="setor-falta"     fill="#2e7d32" fill-rule="evenodd"/>
 
       <!-- Anel interior: disponibilidade (das 9h às 21h). Decorrido cinzento + falta (cor dinâmica). -->
-      <path id="setor-disponibilidade-decorrido" fill="#9e9e9e"/>
+      <path id="setor-disponibilidade-decorrido"/>
       <path id="setor-disponibilidade"           fill="#ff9800"/>
 
       <!-- Marcações dinâmicas (números, ticks) — preenchido por JS no init -->
@@ -432,7 +432,7 @@ a { color:#1976d2; }
       </div>
       <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://farmaciaservicoconcelhosilhavoeaveiro.netlify.app/" alt="QR code para abrir o site das farmácias de serviço">
     </div>
-    <a href="https://farmaciaservicoconcelhosilhavoeaveiro.netlify.app/" target="_blank">
+    <a href="https://farmaciaservicoconcelhosilhavoeaveiro.netlify.app/" target="_blank" rel="noopener noreferrer">
       https://farmaciaservicoconcelhosilhavoeaveiro.netlify.app/
     </a>
   </div>
@@ -495,9 +495,10 @@ function obterDataServico(p = partesLisboa()) {
 }
 
 // Cores partilhadas
-const COR_TURNO       = "#2e7d32"; // verde institucional
-const COR_DISP        = "#ff9800"; // laranja disponibilidade
-const COR_ALERTA      = "#d32f2f"; // vermelho material (texto e anéis)
+const COR_TURNO      = "#2e7d32"; // verde institucional
+const COR_DISP       = "#ff9800"; // laranja disponibilidade
+const COR_ALERTA     = "#d32f2f"; // vermelho material (texto e anéis)
+const COR_DECORRIDO  = "#9e9e9e"; // cinzento (setor decorrido + estado fechado)
 
 // =====================================================================
 // REFERÊNCIAS DOM CACHEADAS
@@ -607,7 +608,7 @@ function renderDisponibilidade(p, dataServico) {
   if (p.h === 20) {
     realce = `<span style="background:${COR_ALERTA};color:#fff;padding:2px 6px;border-radius:3px;">${verbo} às 21h</span>`;
   } else if (fechado) {
-    realce = `<span style="background:#9e9e9e;color:#fff;padding:2px 6px;border-radius:3px;">${verbo} às 21h</span>`;
+    realce = `<span style="background:${COR_DECORRIDO};color:#fff;padding:2px 6px;border-radius:3px;">${verbo} às 21h</span>`;
   } else {
     realce = `${verbo} às 21h`;
   }
@@ -680,9 +681,16 @@ function atualizarDatas(p) {
 // Esconde o botão "Ligar" dos telefones fixos das farmácias de Ílhavo fora
 // do horário 9h–21h15 (15 minutos de tolerância depois do fecho). Os botões
 // dos telemóveis (Branco) mantêm-se sempre visíveis.
+// Cache do último estado (true/false/null) para evitar querySelectorAll
+// a cada segundo. O estado só pode mudar 2x por dia (9h e 21h15), por isso
+// na esmagadora maioria dos ticks saímos cedo.
+let ultimaVisibilidadeLigar = null;
 function atualizarVisibilidadeLigar(p) {
   const minutosDoDia = p.h * 60 + p.m;
   const dentroDoHorario = (minutosDoDia >= 9 * 60) && (minutosDoDia < 21 * 60 + 15);
+
+  if (dentroDoHorario === ultimaVisibilidadeLigar) return;
+  ultimaVisibilidadeLigar = dentroDoHorario;
 
   document.querySelectorAll(".ligar-condicional").forEach(el => {
     el.style.display = dentroDoHorario ? "" : "none";
@@ -911,7 +919,7 @@ let numFarmaciasIlhavo = 0;
 
 // Cache do último HTML escrito em cada elemento, para evitar re-render quando
 // o conteúdo não muda. As funções abaixo só tocam no DOM se o HTML novo for
-// diferente do anterior. Reduz reflows de ~120/min para ~2/min.
+// diferente do anterior. Reduz reflows de ~240/min para ~2/min.
 let ultimoUpdate = "";
 let ultimoGrelhaRestante = "";
 let ultimoDisponibilidade = "";
@@ -927,6 +935,9 @@ function tick(dados, p = partesLisboa()) {
     render(slugsIlhavo, dados.farmacias.ilhavo, "ilhavo");
     render(getSlugs(dataServico, dados.calendario.aveiro), dados.farmacias.aveiro, "aveiro");
     dataServicoAnterior = dataServico;
+    // Os elementos .ligar-condicional foram recriados — invalidar cache
+    // para forçar atualizarVisibilidadeLigar() a re-aplicar o estado.
+    ultimaVisibilidadeLigar = null;
   }
 
   renderDisponibilidade(p, dataServico);
@@ -936,6 +947,10 @@ function tick(dados, p = partesLisboa()) {
 }
 
 (async () => {
+  // Cor cinzenta dos setores decorridos (centralizada em COR_DECORRIDO).
+  dom.setorDecorrido.setAttribute("fill", COR_DECORRIDO);
+  dom.setorDispDecorrido.setAttribute("fill", COR_DECORRIDO);
+
   gerarMarcacoesRelogio();
   atualizarRelogio();
 
